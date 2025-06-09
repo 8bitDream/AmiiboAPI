@@ -3442,6 +3442,15 @@
 				"na": "2025-06-05"
 			}
 		},
+		"0x010d000004a70902": {
+			"name": "Mineru's Construct",
+			"release": {
+				"au": "2025-06-05",
+				"eu": "2025-06-05",
+				"jp": "2025-06-05",
+				"na": "2025-06-05"
+			}
+		},
 		"0x0486000100fc0502":
 		{
 			"name": "Chops",
@@ -10659,6 +10668,7 @@
 		"0x010a": "Sidon",
 		"0x010b": "Tulin",
 		"0x010c": "Yunobo",
+		"0x010d": "Mineru's Construct",
 		"0x0140": "Guardian",
 		"0x0141": "Bokoblin",
 		"0x0180": "Villager",
