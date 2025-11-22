@@ -107687,7 +107687,18 @@
 					]
 				}
 			],
-			"gamesSwitch2": []
+			"gamesSwitch2": [
+				{
+					"gameName": "Kirby Air Riders",
+					"gameID": [],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive better rewards",
+							"write": false
+						}
+					]
+				}
+			]
 		},
 		"0x1f00000002540c02": {
 			"games3DS": [
@@ -108028,7 +108039,18 @@
 					]
 				}
 			],
-			"gamesSwitch2": []
+			"gamesSwitch2": [
+				{
+					"gameName": "Kirby Air Riders",
+					"gameID": [],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive better rewards",
+							"write": false
+						}
+					]
+				}
+			]
 		},
 		"0x1f01000000270002": {
 			"games3DS": [
@@ -108291,7 +108313,18 @@
 					]
 				}
 			],
-			"gamesSwitch2": []
+			"gamesSwitch2": [
+				{
+					"gameName": "Kirby Air Riders",
+					"gameID": [],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive better rewards",
+							"write": false
+						}
+					]
+				}
+			]
 		},
 		"0x1f01000002550c02": {
 			"games3DS": [
@@ -108554,7 +108587,18 @@
 					]
 				}
 			],
-			"gamesSwitch2": []
+			"gamesSwitch2": [
+				{
+					"gameName": "Kirby Air Riders",
+					"gameID": [],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive better rewards",
+							"write": false
+						}
+					]
+				}
+			]
 		},
 		"0x1f02000000280002": {
 			"games3DS": [
@@ -108831,7 +108875,18 @@
 					]
 				}
 			],
-			"gamesSwitch2": []
+			"gamesSwitch2": [
+				{
+					"gameName": "Kirby Air Riders",
+					"gameID": [],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive better rewards",
+							"write": false
+						}
+					]
+				}
+			]
 		},
 		"0x1f02000002560c02": {
 			"games3DS": [
@@ -109108,7 +109163,18 @@
 					]
 				}
 			],
-			"gamesSwitch2": []
+			"gamesSwitch2": [
+				{
+					"gameName": "Kirby Air Riders",
+					"gameID": [],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive better rewards",
+							"write": false
+						}
+					]
+				}
+			]
 		},
 		"0x1f03000002570c02": {
 			"games3DS": [
@@ -109293,7 +109359,18 @@
 					]
 				}
 			],
-			"gamesSwitch2": []
+			"gamesSwitch2": [
+				{
+					"gameName": "Kirby Air Riders",
+					"gameID": [],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive better rewards",
+							"write": false
+						}
+					]
+				}
+			]
 		},
 		"0x1f400000035e1002": {
 			"games3DS": [
