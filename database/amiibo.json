@@ -10215,6 +10215,24 @@
 				"jp": "2024-02-16",
 				"na": "2024-02-16"
 			}
+		},
+		"0x1f00000004c41e03": {
+			"name": "Kirby",
+			"release": {
+				"au": "2025-11-20",
+				"eu": "2025-11-20",
+				"jp": "2025-11-20",
+				"na": "2025-11-20"
+			}
+		},
+		"0x1f03010004c91e03": {
+			"name": "Bandana Waddle Dee",
+			"release": {
+				"au": "2025-11-20",
+				"eu": "2025-11-20",
+				"jp": "2025-11-20",
+				"na": "2025-11-20"
+			}
 		}
 	},
 	"amiibo_series":
@@ -10247,7 +10265,8 @@
 		"0x1a": "Donkey Kong",
 		"0x1b": "Xenoblade Chronicles 3",
 		"0x1c": "My Mario Wooden Blocks",
-		"0x1d": "Street Fighter 6"
+		"0x1d": "Street Fighter 6",
+		"0x1e": "Kirby Air Riders"
 	},
 	"game_series":
 	{
