@@ -7,9 +7,9 @@ on:
 
 jobs:
   get_info:
-    uses: MrKev312/AmiiboGamelistGenerator/.github/workflows/game_info.yml@main
+    uses: 8bitDream/AmiiboGamelistGenerator/.github/workflows/game_info.yml@main
     with:
-      repo: MrKev312/AmiiboGamelistGenerator
+      repo: 8bitDream/AmiiboGamelistGenerator
       repo-ref: main
 
   report:
