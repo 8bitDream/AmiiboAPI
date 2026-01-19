@@ -1,0 +1,22 @@
+From 70b0c600c9896f4d8604d7fc37729f93019e6a92 Mon Sep 17 00:00:00 2001
+From: Abandoned Cart <twistedumbrella@gmail.com>
+Date: Tue, 6 Jan 2026 22:37:12 -0500
+Subject: [PATCH] Temporarily patch the game databsee
+
+---
+ database/games_info.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/database/games_info.json b/database/games_info.json
+index 63068df..12811f9 100644
+--- a/database/games_info.json
++++ b/database/games_info.json
+@@ -97348,7 +97348,7 @@
+ 					],
+ 					"amiiboUsage": [
+ 						{
+-							"Usage": "View a particular completed cutscene after beating game without needing 100% completion	/ Hear a random voice line from Sylux",
++							"Usage": "View a particular completed cutscene after beating game without needing completion / Hear a random voice line from Sylux",
+ 							"write": false
+ 						}
+ 					]
