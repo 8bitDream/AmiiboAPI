@@ -37,6 +37,5 @@ jobs:
           git pull origin dev
           git add -A database/games_info.json
           if(git commit -m "[Automated] Update: $(git diff --name-only --staged)") {
-            git cherry-pick 32b056a83cd9ae7261f2ab259264f8732f8e8368
             git push
           }
