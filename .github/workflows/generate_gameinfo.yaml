@@ -7,9 +7,9 @@ on:
 
 jobs:
   get_info:
-    uses: MrKev312/AmiiboGamelistGenerator/.github/workflows/game_info.yml@main
+    uses: 8bitDream/AmiiboGamelistGenerator/.github/workflows/game_info.yml@main
     with:
-      repo: MrKev312/AmiiboGamelistGenerator
+      repo: 8bitDream/AmiiboGamelistGenerator
       repo-ref: main
 
   report:
@@ -17,14 +17,14 @@ jobs:
     needs: [get_info]
     permissions:
       contents: write
-      
+
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
             ref: dev
 
       - name: Download artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v6
         with:
           name: games_info
           path: database/
@@ -32,10 +32,11 @@ jobs:
       - name: Commit json files
         shell: pwsh
         run: |
-          git config --global user.name 'N3evin (Automated)'
-          git config --global user.email '2455104+N3evin@users.noreply.github.com'
+          git config --local user.name 'AmiiboAPI (Automated)'
+          git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git pull origin dev
           git add -A database/games_info.json
           if(git commit -m "[Automated] Update: $(git diff --name-only --staged)") {
+            git cherry-pick 32b056a83cd9ae7261f2ab259264f8732f8e8368
             git push
           }
