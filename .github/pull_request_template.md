@@ -19,6 +19,7 @@ Please use the following form when submitting a pull request for amiibo database
 {
 	"games3DS": [],
 	"gamesWiiU": [],
-	"gamesSwitch": []
+	"gamesSwitch": [],
+	"gamesSwitch2": []
 }
 ```

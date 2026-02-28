@@ -46,6 +46,7 @@ class AmiiboManager:
                     'games3DS': amiibo.games3DS,
                     'gamesWiiU': amiibo.gamesWiiU,
                     'gamesSwitch': amiibo.gamesSwitch
+                    'gamesSwitch2': amiibo.gamesSwitch2
                 }
                 for amiibo in self.amiibosfull
             },
@@ -83,7 +84,7 @@ class AmiiboManager:
                         jp=AmiiboManager._parse_date(amiibo['release']['jp']),
                         eu=AmiiboManager._parse_date(amiibo['release']['eu']),
                         au=AmiiboManager._parse_date(amiibo['release']['au']),
-                ), data1['amiibos'][id_]['games3DS'], data1['amiibos'][id_]['gamesWiiU'], data1['amiibos'][id_]['gamesSwitch'])
+                ), data1['amiibos'][id_]['games3DS'], data1['amiibos'][id_]['gamesWiiU'], data1['amiibos'][id_]['gamesSwitch'], data1['amiibos'][id_]['gamesSwitch2'])
                 for id_, amiibo in data['amiibos'].items()
         )
 
@@ -93,10 +94,16 @@ class AmiiboManager:
                         jp=AmiiboManager._parse_date(amiibo['release']['jp']),
                         eu=AmiiboManager._parse_date(amiibo['release']['eu']),
                         au=AmiiboManager._parse_date(amiibo['release']['au']),
-                ), data1['amiibos'][id_]['games3DS'], data1['amiibos'][id_]['gamesWiiU'], data1['amiibos'][id_]['gamesSwitch'])
+                ), data1['amiibos'][id_]['games3DS'], data1['amiibos'][id_]['gamesWiiU'], data1['amiibos'][id_]['gamesSwitch'], data1['amiibos'][id_]['gamesSwitch2'])
                 for id_, amiibo in data['amiibos'].items()
         )
         for amiibo in self.amiibosfullwithoutusage:
+            amiibo.gamesSwitch2 = copy.deepcopy(amiibo.gamesSwitch2)
+            for game in amiibo.gamesSwitch2:
+                try:
+                    del game['amiiboUsage']
+                except:
+                    pass
             amiibo.gamesSwitch = copy.deepcopy(amiibo.gamesSwitch)
             for game in amiibo.gamesSwitch:
                 try:
@@ -128,6 +135,7 @@ class AmiiboManager:
         )
         for amiibo in self.amiibos:
             try:
+                del amiibo.gamesSwitch2
                 del amiibo.gamesSwitch
                 del amiibo.games3DS
                 del amiibo.gamesWiiU
