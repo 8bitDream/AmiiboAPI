@@ -45,7 +45,7 @@ class AmiiboManager:
                     },
                     'games3DS': amiibo.games3DS,
                     'gamesWiiU': amiibo.gamesWiiU,
-                    'gamesSwitch': amiibo.gamesSwitch
+                    'gamesSwitch': amiibo.gamesSwitch,
                     'gamesSwitch2': amiibo.gamesSwitch2
                 }
                 for amiibo in self.amiibosfull
@@ -130,7 +130,7 @@ class AmiiboManager:
                         jp=self._parse_date(amiibo['release']['jp']),
                         eu=self._parse_date(amiibo['release']['eu']),
                         au=self._parse_date(amiibo['release']['au']),
-                ), None, None, None) # TODO: add custom Amiibo class that doesn't need the games
+                ), None, None, None, None) # TODO: add custom Amiibo class that doesn't need the games
                 for id_, amiibo in data['amiibos'].items()
         )
         for amiibo in self.amiibos:
