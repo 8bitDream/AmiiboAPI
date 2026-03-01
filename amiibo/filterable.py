@@ -160,6 +160,10 @@ class AmiiboCollection(FilterableCollection):
         value = value.lower() if value else value
         return lambda x: value in x.game_series.name.lower()
 
+    @filterable('switch2_titleid')
+    def filter_switch2_titleid(self, value):
+        return lambda x: any(value in game.get("gameID") for game in x.gamesSwitch2)
+    
     @filterable('switch_titleid')
     def filter_switch_titleid(self, value):
         return lambda x: any(value in game.get("gameID") for game in x.gamesSwitch)

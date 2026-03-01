@@ -103,6 +103,7 @@ def route_api_amiibofull():
                 'gameseries': 'gameseries',
                 'gameseries_id': 'game_series_id',
                 'gameseries_name': 'game_series_name',
+                'switch2_titleid' : 'gamesSwitch2',
                 'switch_titleid' : 'gamesSwitch',
                 '3ds_titleid' : 'games3DS',
                 'wiiu_titleid' : 'gamesWiiU',
