@@ -7,7 +7,7 @@ body:
       attributes:
         label: ID
         description: Enter the ID
-        placeholder: 0x0000000000000000
+        placeholder: "0x0000000000000000"
       validations:
         required: true
     - type: input
