@@ -1,0 +1,43 @@
+name: "amiibo"
+description: "Submit a new amiibo"
+title: "[amiibo]: "
+labels: [amiibo]
+body:
+    - type: input
+      attributes:
+        label: ID
+        description: Enter the ID
+        placeholder: 0x0000000000000000
+      validations:
+        required: true
+    - type: input
+      attributes:
+        label: Enter JP release
+        placeholder: YYYY-MM-DD
+      validations:
+        required: true
+    - type: input
+      attributes:
+        label: Enter AU release
+        description: Only required if different
+        placeholder: YYYY-MM-DD
+      validations:
+        required: false
+    - type: input
+      attributes:
+        label: Enter NA release
+        description: Only required if different
+        placeholder: YYYY-MM-DD
+      validations:
+        required: false
+    - type: input
+      attributes:
+        label: Enter EU release
+        description: Only required if different
+        placeholder: YYYY-MM-DD
+      validations:
+        required: false
+    - type: input
+      attributes:
+        label: Enter amiibo.life URL
+        placeholder: https://amiibo.life/amiibo/game/character
