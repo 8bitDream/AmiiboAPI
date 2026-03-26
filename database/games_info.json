@@ -19233,6 +19233,12 @@
 			],
 			"gamesSwitch2": []
 		},
+		"0x0000040004c10102": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": [],
+			"gamesSwitch2": []
+		},
 		"0x000a000303a0ff02": {
 			"games3DS": [],
 			"gamesWiiU": [],
@@ -19334,6 +19340,18 @@
 					]
 				}
 			],
+			"gamesSwitch2": []
+		},
+		"0x000a010004c20102": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": [],
+			"gamesSwitch2": []
+		},
+		"0x0025010004c30102": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": [],
 			"gamesSwitch2": []
 		},
 		"0x0013000002660102": {
@@ -115636,19 +115654,58 @@
 		"0x350c000004fa0f02": {
 			"games3DS": [],
 			"gamesWiiU": [],
-			"gamesSwitch": [],
+			"gamesSwitch": [
+				{
+					"gameName": "Monster Hunter Rise",
+					"gameID": [
+						"0100B04011742000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock Monster Hunter Stories 2 sticker set",
+							"write": false
+						}
+					]
+				}
+			],
 			"gamesSwitch2": []
 		},
 		"0x350d000004fb0f02": {
 			"games3DS": [],
 			"gamesWiiU": [],
-			"gamesSwitch": [],
+			"gamesSwitch": [
+				{
+					"gameName": "Monster Hunter Rise",
+					"gameID": [
+						"0100B04011742000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock Monster Hunter Stories 2 sticker set",
+							"write": false
+						}
+					]
+				}
+			],
 			"gamesSwitch2": []
 		},
 		"0x350e000004fc0f02": {
 			"games3DS": [],
 			"gamesWiiU": [],
-			"gamesSwitch": [],
+			"gamesSwitch": [
+				{
+					"gameName": "Monster Hunter Rise",
+					"gameID": [
+						"0100B04011742000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock Monster Hunter Stories 2 sticker set",
+							"write": false
+						}
+					]
+				}
+			],
 			"gamesSwitch2": []
 		},
 		"0x35c0000002500a02": {

@@ -6755,6 +6755,17 @@
 				"jp": "2014-12-06"
 			}
 		},
+		"0x0000040004c10102":
+		{
+			"name": "Elephant Mario",
+			"release":
+			{
+				"au": "2026-03-26",
+				"na": "2026-03-26",
+				"eu": "2026-03-26",
+				"jp": "2026-03-26"
+			}
+		},
 		"0x000a000303a0ff02":
 		{
 			"name": "Toad - Power Up Band",
@@ -6764,6 +6775,28 @@
 				"na": null,
 				"eu": null,
 				"jp": "2021-02-04"
+			}
+		},
+		"0x000a010004c20102":
+		{
+			"name": "Captain Toad & Talking Flower",
+			"release":
+			{
+				"au": "2026-03-26",
+				"na": "2026-03-26",
+				"eu": "2026-03-26",
+				"jp": "2026-03-26"
+			}
+		},
+		"0x0025010004c30102":
+		{
+			"name": "Poplin & Prince Florian",
+			"release":
+			{
+				"au": "2026-03-26",
+				"na": "2026-03-26",
+				"eu": "2026-03-26",
+				"jp": "2026-03-26"
 			}
 		},
 		"0x03ed000101a30502":
@@ -10759,8 +10792,9 @@
 		"0x030e": "Freckles",
 		"0x030f": "Derwin",
 		"0x3200": "Sonic",
-		"0x0024": "Piranha Plant",
 		"0x0023": "Koopa Troopa",
+		"0x0024": "Piranha Plant",
+		"0x0025": "Poplin",
 		"0x3500": "One-Eyed Rathalos",
 		"0x025f": "Rosie",
 		"0x025d": "Bob",
