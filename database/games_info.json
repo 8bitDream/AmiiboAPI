@@ -38185,6 +38185,12 @@
 			],
 			"gamesSwitch2": []
 		},
+		"0x0004010004ea0102": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": [],
+			"gamesSwitch2": []
+		},
 		"0x018b000002460502": {
 			"games3DS": [
 				{
@@ -52790,6 +52796,12 @@
 					]
 				}
 			],
+			"gamesSwitch2": []
+		},
+		"0x0000050004e90102": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": [],
 			"gamesSwitch2": []
 		},
 		"0x0260000100d20502": {
