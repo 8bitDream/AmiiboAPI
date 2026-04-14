@@ -1,0 +1,68 @@
+name: Convert PNG to WebP
+
+on:
+  push:
+    paths:
+      - 'images/**/*.png'
+  workflow_dispatch:
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Install ImageMagick
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+
+      - name: Convert new PNG files to WebP
+        run: |
+          set -euo pipefail
+          mkdir -p imgwebp
+          : > /tmp/converted_webp_files.txt
+
+          if command -v magick >/dev/null 2>&1; then
+            IMAGEMAGICK_CMD="magick"
+          else
+            IMAGEMAGICK_CMD="convert"
+          fi
+
+          while IFS= read -r -d '' png_file; do
+            relative_path="${png_file#images/}"
+            relative_base="${relative_path%.png}"
+            webp_file="imgwebp/${relative_base}.webp"
+
+            mkdir -p "$(dirname "${webp_file}")"
+
+            if [ ! -f "${webp_file}" ]; then
+              "${IMAGEMAGICK_CMD}" "${png_file}" "${webp_file}"
+              echo "${webp_file}" >> /tmp/converted_webp_files.txt
+            fi
+          done < <(find images -type f -name '*.png' -print0)
+
+          if [ -s /tmp/converted_webp_files.txt ]; then
+            echo "Converted files:"
+            cat /tmp/converted_webp_files.txt
+          else
+            echo "No PNG files required conversion."
+          fi
+
+      - name: Commit converted WebP files
+        run: |
+          git add imgwebp
+
+          if git diff --cached --quiet; then
+            echo "No new WebP files to commit."
+            exit 0
+          fi
+
+          git config --local user.name 'AmiiboAPI (Automated)'
+          git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if git commit -m "[Automated] Add missing WebP images"; then
+            git push
+          fi
