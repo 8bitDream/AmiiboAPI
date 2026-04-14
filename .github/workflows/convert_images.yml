@@ -23,7 +23,7 @@ jobs:
       - name: Convert new PNG files to WebP
         run: |
           set -euo pipefail
-          mkdir -p imgwebp
+          mkdir -p webp
           : > /tmp/converted_webp_files.txt
 
           if command -v magick >/dev/null 2>&1; then
@@ -35,7 +35,7 @@ jobs:
           while IFS= read -r -d '' png_file; do
             relative_path="${png_file#images/}"
             relative_base="${relative_path%.png}"
-            webp_file="imgwebp/${relative_base}.webp"
+            webp_file="webp/${relative_base}.webp"
 
             mkdir -p "$(dirname "${webp_file}")"
 
@@ -54,7 +54,7 @@ jobs:
 
       - name: Commit converted WebP files
         run: |
-          git add imgwebp
+          git add webp
 
           if git diff --cached --quiet; then
             echo "No new WebP files to commit."
