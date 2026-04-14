@@ -27,7 +27,7 @@ class AmiiboJSONEncoder(JSONEncoder):
                 'amiiboSeries': obj.amiibo_series.name if obj.amiibo_series else None,
                 'character': obj.character.name if obj.character else None,
                 'image': "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_{}-{}.png".format(str(obj.head)[2:], str(obj.tail)[2:]),
-                'imgwebp': "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/imgwebp/icon_{}-{}.webp".format(str(obj.head)[2:], str(obj.tail)[2:]),
+                'imgwebp': "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/webp/icon_{}-{}.webp".format(str(obj.head)[2:], str(obj.tail)[2:]),
                 'release': obj.release
             }
             try:

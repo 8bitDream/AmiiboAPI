@@ -20,10 +20,10 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y imagemagick
 
-      - name: Convert new PNG files to WebP
+      - name: Convert PNG files to WebP
         run: |
           set -euo pipefail
-          mkdir -p imgwebp
+          mkdir -p webp
           : > /tmp/converted_webp_files.txt
 
           if command -v magick >/dev/null 2>&1; then
@@ -35,11 +35,11 @@ jobs:
           while IFS= read -r -d '' png_file; do
             relative_path="${png_file#images/}"
             relative_base="${relative_path%.png}"
-            webp_file="imgwebp/${relative_base}.webp"
+            webp_file="webp/${relative_base}.webp"
 
             mkdir -p "$(dirname "${webp_file}")"
 
-            if [ ! -f "${webp_file}" ]; then
+            if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ ! -f "${webp_file}" ]; then
               "${IMAGEMAGICK_CMD}" "${png_file}" "${webp_file}"
               echo "${webp_file}" >> /tmp/converted_webp_files.txt
             fi
@@ -54,7 +54,7 @@ jobs:
 
       - name: Commit converted WebP files
         run: |
-          git add imgwebp
+          git add webp
 
           if git diff --cached --quiet; then
             echo "No new WebP files to commit."
