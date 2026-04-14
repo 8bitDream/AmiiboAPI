@@ -20,7 +20,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y imagemagick
 
-      - name: Convert new PNG files to WebP
+      - name: Convert PNG files to WebP
         run: |
           set -euo pipefail
           mkdir -p webp
@@ -39,7 +39,7 @@ jobs:
 
             mkdir -p "$(dirname "${webp_file}")"
 
-            if [ ! -f "${webp_file}" ]; then
+            if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ ! -f "${webp_file}" ]; then
               "${IMAGEMAGICK_CMD}" "${png_file}" "${webp_file}"
               echo "${webp_file}" >> /tmp/converted_webp_files.txt
             fi
