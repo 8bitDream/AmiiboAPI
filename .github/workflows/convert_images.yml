@@ -31,6 +31,15 @@ jobs:
           else
             IMAGEMAGICK_CMD="convert"
           fi
+          WEBP_OPTIONS=(
+            -strip
+            -quality 90
+            -define webp:lossless=false
+            -define webp:method=6
+            -define webp:auto-filter=true
+            -define webp:alpha-quality=100
+            -define webp:use-sharp-yuv=true
+          )
 
           while IFS= read -r -d '' png_file; do
             relative_path="${png_file#images/}"
@@ -40,7 +49,7 @@ jobs:
             mkdir -p "$(dirname "${webp_file}")"
 
             if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ ! -f "${webp_file}" ]; then
-              "${IMAGEMAGICK_CMD}" "${png_file}" "${webp_file}"
+              "${IMAGEMAGICK_CMD}" "${png_file}" "${WEBP_OPTIONS[@]}" "${webp_file}"
               echo "${webp_file}" >> /tmp/converted_webp_files.txt
             fi
           done < <(find images -type f -name '*.png' -print0)
