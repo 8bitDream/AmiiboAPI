@@ -457,6 +457,10 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
 						}
 					]
 				},
@@ -1022,6 +1026,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -1598,6 +1606,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -2183,6 +2203,10 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
 						}
 					]
 				},
@@ -2760,6 +2784,18 @@
 					]
 				},
 				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Super Mario Galaxy",
 					"gameID": [
 						"010099C022B96000"
@@ -3320,6 +3356,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -3897,6 +3945,10 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
 						}
 					]
 				},
@@ -4060,6 +4112,10 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
 						}
 					]
 				},
@@ -4202,6 +4258,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -4741,6 +4801,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -5299,6 +5363,18 @@
 					]
 				},
 				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Super Mario Galaxy",
 					"gameID": [
 						"010099C022B96000"
@@ -5846,6 +5922,10 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
 						}
 					]
 				},
@@ -6379,19 +6459,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a power-up depending on the amiibo",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Super Mario Bros. Wonder",
-					"gameID": [
-						"010015100B514000"
-					],
-					"amiiboUsage": [
-						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -6932,6 +7004,18 @@
 					]
 				},
 				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Super Mario Galaxy",
 					"gameID": [
 						"010099C022B96000"
@@ -7398,6 +7482,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the character",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -7913,6 +8009,18 @@
 					]
 				},
 				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Super Mario Galaxy",
 					"gameID": [
 						"010099C022B96000"
@@ -8035,6 +8143,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the character",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -8518,6 +8638,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the character",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -9009,6 +9141,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -9527,6 +9663,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -10056,6 +10196,10 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
 						}
 					]
 				},
@@ -10230,6 +10374,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -10721,6 +10869,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -11225,6 +11377,10 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
 						}
 					]
 				},
@@ -11649,6 +11805,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -12102,6 +12262,10 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
 						}
 					]
 				},
@@ -12228,6 +12392,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -12653,6 +12821,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -13098,6 +13270,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -13567,6 +13743,18 @@
 					]
 				},
 				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Super Mario Galaxy",
 					"gameID": [
 						"010099C022B96000"
@@ -14031,6 +14219,18 @@
 					]
 				},
 				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Super Mario Galaxy",
 					"gameID": [
 						"010099C022B96000"
@@ -14472,6 +14672,10 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
 						}
 					]
 				},
@@ -14875,6 +15079,10 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
 						}
 					]
 				},
@@ -15238,6 +15446,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -15614,6 +15834,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -16049,6 +16281,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -16535,6 +16771,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -17032,6 +17272,10 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
 						}
 					]
 				},
@@ -17515,6 +17759,10 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
 						}
 					]
 				},
@@ -17851,6 +18099,10 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
 						}
 					]
 				},
@@ -18123,6 +18375,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -18435,6 +18691,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -18800,6 +19060,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -19194,6 +19458,10 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
 						}
 					]
 				},
@@ -19309,6 +19577,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -19675,6 +19947,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -20054,6 +20330,10 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
 						}
 					]
 				},
@@ -20308,6 +20588,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -20603,6 +20887,10 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
 						}
 					]
 				},
@@ -20706,6 +20994,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -21165,6 +21457,10 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
 						}
 					]
 				},
@@ -21279,6 +21575,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -21696,19 +21996,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a power-up depending on the amiibo",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Super Mario Bros. Wonder",
-					"gameID": [
-						"010015100B514000"
-					],
-					"amiiboUsage": [
-						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -21909,6 +22201,10 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
 						}
 					]
 				},
@@ -22093,6 +22389,10 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
 						}
 					]
 				},
@@ -22207,6 +22507,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -22383,6 +22687,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -22797,6 +23105,10 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
 						}
 					]
 				},
@@ -22960,6 +23272,10 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
 						}
 					]
 				},
@@ -23051,6 +23367,10 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
+							"write": false
 						}
 					]
 				},
@@ -23120,7 +23440,7 @@
 							"write": false
 						},
 						{
-							"Usage": "Receive a power-up depending on the amiibo",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -23193,6 +23513,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						},
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -106404,7 +106728,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -106438,7 +106762,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -106472,7 +106796,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -106506,7 +106830,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -106540,7 +106864,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -106574,7 +106898,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -106608,7 +106932,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -106642,7 +106966,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -106676,7 +107000,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -106710,7 +107034,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -106744,7 +107068,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -106778,7 +107102,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -106812,7 +107136,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -106846,7 +107170,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -106880,7 +107204,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -106914,7 +107238,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -106948,7 +107272,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -106982,7 +107306,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107016,7 +107340,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107050,7 +107374,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107084,7 +107408,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107118,7 +107442,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107152,7 +107476,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107186,7 +107510,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107220,7 +107544,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107254,7 +107578,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107288,7 +107612,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107322,7 +107646,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107356,7 +107680,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107390,7 +107714,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107424,7 +107748,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107458,7 +107782,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107492,7 +107816,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107526,7 +107850,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107560,7 +107884,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107594,7 +107918,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107628,7 +107952,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107662,7 +107986,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107696,7 +108020,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107730,7 +108054,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107764,7 +108088,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107798,7 +108122,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107832,7 +108156,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107866,7 +108190,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107900,7 +108224,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107934,7 +108258,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -107968,7 +108292,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108002,7 +108326,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108036,7 +108360,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108070,7 +108394,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108104,7 +108428,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108138,7 +108462,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108172,7 +108496,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108206,7 +108530,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108240,7 +108564,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108274,7 +108598,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108308,7 +108632,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108342,7 +108666,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108376,7 +108700,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108410,7 +108734,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108444,7 +108768,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108478,7 +108802,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108512,7 +108836,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108546,7 +108870,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108580,7 +108904,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108614,7 +108938,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108648,7 +108972,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108682,7 +109006,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108716,7 +109040,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108750,7 +109074,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108784,7 +109108,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108818,7 +109142,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108852,7 +109176,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108886,7 +109210,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108920,7 +109244,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108954,7 +109278,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -108988,7 +109312,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -109022,7 +109346,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -109056,7 +109380,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -109090,7 +109414,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -109124,7 +109448,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -109158,7 +109482,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -109192,7 +109516,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -109226,7 +109550,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -109260,7 +109584,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -109294,7 +109618,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -109328,7 +109652,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -109362,7 +109686,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -109396,7 +109720,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -109430,7 +109754,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
