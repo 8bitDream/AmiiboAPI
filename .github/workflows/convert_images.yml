@@ -49,7 +49,7 @@ jobs:
             mkdir -p "$(dirname "${webp_file}")"
 
             if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ ! -f "${webp_file}" ]; then
-              "${IMAGEMAGICK_CMD}" "${png_file}" "${WEBP_OPTIONS[@]}" "${webp_file}"
+              "${IMAGEMAGICK_CMD}" "${WEBP_OPTIONS[@]}" "${png_file}" "${webp_file}"
               echo "${webp_file}" >> /tmp/converted_webp_files.txt
             fi
           done < <(find images -type f -name '*.png' -print0)
