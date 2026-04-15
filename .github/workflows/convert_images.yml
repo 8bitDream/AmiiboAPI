@@ -70,6 +70,6 @@ jobs:
 
           git config --local user.name 'AmiiboAPI (Automated)'
           git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          if git commit -m "[Automated] Add missing WebP images"; then
+          if git commit -m "[Automated] Convert PNG to WebP images"; then
             git push
           fi
