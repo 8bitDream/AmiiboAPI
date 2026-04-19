@@ -5,11 +5,12 @@
 @copyright: Copyright 2017, AmiiboAPI
 @license: MIT License
 """
+import os
 import colors
 
 from rfc3339 import rfc3339
 
-from flask import Flask, jsonify, make_response, render_template, request
+from flask import Flask, abort, jsonify, make_response, render_template, request, send_from_directory
 from flask_compress import Compress
 from flask_cors import CORS
 
@@ -57,6 +58,15 @@ def documentation():
 @app.route('/faq/')
 def faqPage():
     return render_template('faq.html')
+
+
+@app.route('/.well-known/acme-challenge/<path:filename>')
+def certbot_challenge(filename):
+    webroot = os.getenv("CERTBOT_WEBROOT", "/var/www/certbot")
+    challenge_dir = os.path.join(webroot, ".well-known", "acme-challenge")
+    if not os.path.isdir(challenge_dir):
+        abort(404)
+    return send_from_directory(challenge_dir, filename)
 
 # Handle 400 as json or else Flask will use html as default.
 @app.errorhandler(400)

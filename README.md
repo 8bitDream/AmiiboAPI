@@ -44,6 +44,29 @@ More APIs examples can be found here: [https://www.amiiboapi.org/docs/](https://
 Click on the `Deploy to Heroku` button and you are good to go!
 *Heroku is a paid service and requires an account to use*
 
+### SSL / Certbot auto-renewal
+Certbot is included for container/self-hosted deployments with automatic renewal.
+
+- Default certificate domain: `amiiboapi.org`
+- Default webroot for ACME challenges: `/var/www/certbot`
+- Renewal schedule: daily at `03:00` server time via cron
+
+#### Environment variables
+- `ENABLE_CERTBOT_AUTO_SSL` (default: `1`) enable/disable Certbot bootstrap and renewal setup on container startup
+- `CERTBOT_DOMAIN` (default: `amiiboapi.org`) domain to issue/renew certificates for
+- `CERTBOT_EMAIL` (default: `ssl-admin@amiiboapi.org`) email used for Let's Encrypt registration
+- `CERTBOT_WEBROOT` (default: `/var/www/certbot`) ACME challenge webroot
+- `CERTBOT_STAGING` (default: `0`) set to `1` to use Let's Encrypt staging
+- `CERTBOT_RELOAD_COMMAND` optional command run after successful renewals (for reverse proxies/web servers)
+
+#### Hosting-location behavior
+- **AWS EC2 / container hosts**: startup scripts detect AWS environments and request certificates with Certbot automatically.
+- **Heroku**: startup scripts detect Heroku and skip Certbot because SSL is managed by Heroku ACM.
+
+#### Manual commands
+- Initial setup: `sh deploy/certbot/bootstrap.sh`
+- Renewal run: `sh deploy/certbot/renew.sh`
+
 ### Credit
 - [Brickleberry19 - Amiibo IDs](https://github.com/Brickleberry19)
 - [JSON script source](https://script.google.com/d/143u0RLuppsmYJ0B3wzo6i0jZYSfIFV2NLJMHPM-Sqczpr9bLwdffc-Wx/edit?usp=sharing)
