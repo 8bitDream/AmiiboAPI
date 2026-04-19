@@ -71,7 +71,7 @@ If it is missing, initial Certbot setup runs automatically; otherwise it skips i
 - Initial setup: `sh deploy/certbot/bootstrap.sh`
 - Renewal run: `sh deploy/certbot/renew.sh`
 
-> Renewal scheduling writes to `/etc/cron.d/certbot-renew` and uses root because Certbot certificate files are stored under `/etc/letsencrypt`.
+> Renewal scheduling writes to `/etc/cron.d/certbot-renew` and uses root because Certbot certificate files are stored under `/etc/letsencrypt`; renewal output is sent to syslog with the `certbot-renew` tag.
 
 ### Credit
 - [Brickleberry19 - Amiibo IDs](https://github.com/Brickleberry19)

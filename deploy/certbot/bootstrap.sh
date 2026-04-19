@@ -61,7 +61,7 @@ fi
 
 mkdir -p /etc/cron.d /var/log
 cat <<EOF >/etc/cron.d/certbot-renew
-0 3,15 * * * root /bin/sh /usr/src/app/deploy/certbot/renew.sh >> /proc/1/fd/1 2>&1
+0 3,15 * * * root /bin/sh /usr/src/app/deploy/certbot/renew.sh 2>&1 | logger -t certbot-renew
 EOF
 chmod 0644 /etc/cron.d/certbot-renew
 echo "Certbot bootstrap completed and renewal cron configured."

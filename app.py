@@ -14,6 +14,7 @@ from rfc3339 import rfc3339
 from flask import Flask, abort, jsonify, make_response, render_template, request, send_from_directory
 from flask_compress import Compress
 from flask_cors import CORS
+from werkzeug.exceptions import NotFound
 
 from commons.amiibo_json_encounter import AmiiboJSONEncoder
 from amiibo.manager import AmiiboManager
@@ -63,11 +64,14 @@ def faqPage():
 
 @app.route('/.well-known/acme-challenge/<path:filename>')
 def certbot_challenge(filename):
-    if not re.fullmatch(r"[A-Za-z0-9-]+", filename):
+    if not re.fullmatch(r"[A-Za-z0-9_-]+", filename):
         abort(404)
     webroot = os.getenv("CERTBOT_WEBROOT", "/var/www/certbot")
     challenge_dir = os.path.join(webroot, ".well-known", "acme-challenge")
-    return send_from_directory(challenge_dir, filename)
+    try:
+        return send_from_directory(challenge_dir, filename)
+    except (FileNotFoundError, NotFound):
+        abort(404)
 
 # Handle 400 as json or else Flask will use html as default.
 @app.errorhandler(400)
