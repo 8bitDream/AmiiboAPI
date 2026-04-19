@@ -72,13 +72,13 @@ renew_certificate() {
 
 install_renewal_schedule() {
   local cron_cmd cron_line
-  if [[ "$SCRIPT_PATH" == *" "* || "$LOG_FILE" == *" "* ]]; then
-    echo "SCRIPT_PATH and LOG_FILE must not contain spaces for cron setup." >&2
+  if [[ ! "$SCRIPT_PATH" =~ ^[A-Za-z0-9._/-]+$ || ! "$LOG_FILE" =~ ^[A-Za-z0-9._/-]+$ ]]; then
+    echo "SCRIPT_PATH and LOG_FILE contain unsupported characters for cron setup." >&2
     exit 1
   fi
 
   cron_cmd="/bin/bash \"$SCRIPT_PATH\" renew >> \"$LOG_FILE\" 2>&1"
-  cron_line="0 3 * * * root $cron_cmd"
+  cron_line="0 3,15 * * * root $cron_cmd"
 
   run_as_root touch "$LOG_FILE"
   run_as_root chmod 644 "$LOG_FILE"
