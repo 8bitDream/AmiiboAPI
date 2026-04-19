@@ -14,7 +14,6 @@ DEST_PRIVKEY="$PROJECT_ROOT/privkey.pem"
 
 CRON_FILE="/etc/cron.d/amiiboapi-certbot"
 LOG_FILE="/var/log/amiiboapi-certbot.log"
-CRON_CMD="/bin/bash $SCRIPT_PATH renew >> $LOG_FILE 2>&1"
 
 run_as_root() {
   if [ "${EUID:-$(id -u)}" -eq 0 ]; then
@@ -66,12 +65,13 @@ renew_certificate() {
 }
 
 install_renewal_schedule() {
-  local cron_line
-  cron_line="0 3 * * * root $CRON_CMD"
+  local cron_cmd cron_line
+  printf -v cron_cmd '/bin/bash %q renew >> %q 2>&1' "$SCRIPT_PATH" "$LOG_FILE"
+  cron_line="0 3 * * * root $cron_cmd"
 
   run_as_root touch "$LOG_FILE"
   run_as_root chmod 644 "$LOG_FILE"
-  run_as_root sh -c "printf '%s\n' '$cron_line' > '$CRON_FILE'"
+  printf '%s\n' "$cron_line" | run_as_root tee "$CRON_FILE" >/dev/null
   run_as_root chmod 644 "$CRON_FILE"
 }
 
