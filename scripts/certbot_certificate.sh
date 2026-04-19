@@ -55,7 +55,7 @@ issue_certificate() {
     certbot_args+=(--register-unsafely-without-email)
   fi
 
-  # --standalone uses an internal webserver and requires port 80 to be available.
+  # --standalone uses an internal web server and requires port 80 to be available.
   run_as_root certbot "${certbot_args[@]}"
   sync_certificates_to_project_root
 }
