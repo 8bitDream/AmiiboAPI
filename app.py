@@ -63,12 +63,10 @@ def faqPage():
 
 @app.route('/.well-known/acme-challenge/<path:filename>')
 def certbot_challenge(filename):
-    if not re.fullmatch(r"[A-Za-z0-9_-]+", filename):
+    if not re.fullmatch(r"[A-Za-z0-9-]+", filename):
         abort(404)
     webroot = os.getenv("CERTBOT_WEBROOT", "/var/www/certbot")
     challenge_dir = os.path.join(webroot, ".well-known", "acme-challenge")
-    if not os.path.isdir(challenge_dir):
-        abort(404)
     return send_from_directory(challenge_dir, filename)
 
 # Handle 400 as json or else Flask will use html as default.

@@ -31,6 +31,7 @@ else
   if [ -n "${IMDS_TOKEN}" ] && curl -fsS --max-time 1 -H "X-aws-ec2-metadata-token: ${IMDS_TOKEN}" http://169.254.169.254/latest/meta-data/ >/dev/null 2>&1; then
     HOSTING_LOCATION="aws-ec2"
   fi
+  unset IMDS_TOKEN
 fi
 
 echo "Detected hosting location: ${HOSTING_LOCATION}"
