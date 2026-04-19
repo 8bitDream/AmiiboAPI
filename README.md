@@ -53,7 +53,7 @@ This script:
 - Copies `fullchain.pem` and `privkey.pem` from `/etc/letsencrypt/live/amiiboapi.org/` into the project root
 - Sets file permissions to read/write for owner+group (`660`) on both certificate files
 - Installs `/etc/cron.d/amiiboapi-certbot` to run renewal checks twice daily
-- `certbot renew` renews certificates (90-day validity) when they have 30 days or less remaining
+- `certbot renew` attempts renewal for certificates with 30 days or less remaining (90-day validity period)
 
 > [!IMPORTANT]
 > `certbot --standalone` needs port `80` available. Stop any process using port `80` before running issuance if needed.
