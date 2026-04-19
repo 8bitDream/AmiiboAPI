@@ -6,6 +6,8 @@ CERTBOT_DOMAIN="${CERTBOT_DOMAIN:-$DEFAULT_DOMAIN}"
 CERTBOT_EMAIL="${CERTBOT_EMAIL:-ssl-admin@amiiboapi.org}"
 CERTBOT_WEBROOT="${CERTBOT_WEBROOT:-/var/www/certbot}"
 CERTBOT_STAGING="${CERTBOT_STAGING:-0}"
+CERTBOT_FORCE_BOOTSTRAP="${CERTBOT_FORCE_BOOTSTRAP:-0}"
+CERTBOT_LIVE_DIR="${CERTBOT_LIVE_DIR:-/etc/letsencrypt/live}"
 
 if [ -n "${HEROKU_APP_NAME:-}" ] || [ -n "${DYNO:-}" ]; then
   echo "Detected Heroku environment. SSL is managed by Heroku ACM; skipping Certbot."
@@ -35,6 +37,7 @@ echo "Detected hosting location: ${HOSTING_LOCATION}"
 echo "Using certificate domain: ${CERTBOT_DOMAIN}"
 
 mkdir -p "${CERTBOT_WEBROOT}/.well-known/acme-challenge"
+CERT_PATH="${CERTBOT_LIVE_DIR}/${CERTBOT_DOMAIN}/fullchain.pem"
 
 set -- \
   --non-interactive \
@@ -48,7 +51,12 @@ if [ "${CERTBOT_STAGING}" = "1" ]; then
   set -- "$@" --staging
 fi
 
-certbot certonly "$@"
+if [ "${CERTBOT_FORCE_BOOTSTRAP}" = "1" ] || [ ! -f "${CERT_PATH}" ]; then
+  echo "Running initial certificate setup."
+  certbot certonly "$@"
+else
+  echo "Existing certificate found at ${CERT_PATH}; skipping initial setup."
+fi
 
 mkdir -p /etc/cron.d /var/log
 cat <<EOF >/etc/cron.d/certbot-renew

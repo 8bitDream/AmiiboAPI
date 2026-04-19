@@ -57,11 +57,15 @@ Certbot is included for container/self-hosted deployments with automatic renewal
 - `CERTBOT_EMAIL` (default: `ssl-admin@amiiboapi.org`) email used for Let's Encrypt registration
 - `CERTBOT_WEBROOT` (default: `/var/www/certbot`) ACME challenge webroot
 - `CERTBOT_STAGING` (default: `0`) set to `1` to use Let's Encrypt staging
+- `CERTBOT_FORCE_BOOTSTRAP` (default: `0`) set to `1` to force re-running initial certificate issuance
 - `CERTBOT_RELOAD_COMMAND` optional command run after successful renewals (for reverse proxies/web servers)
 
 #### Hosting-location behavior
 - **AWS EC2 / container hosts**: startup scripts detect AWS environments and request certificates with Certbot automatically.
 - **Heroku**: startup scripts detect Heroku and skip Certbot because SSL is managed by Heroku ACM.
+
+At startup, the bootstrap script checks for an existing certificate at `/etc/letsencrypt/live/<domain>/fullchain.pem`.  
+If it is missing, initial Certbot setup runs automatically; otherwise it skips issuance and keeps renewal-only behavior.
 
 #### Manual commands
 - Initial setup: `sh deploy/certbot/bootstrap.sh`
