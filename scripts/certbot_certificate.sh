@@ -23,16 +23,28 @@ run_as_root() {
 }
 
 sync_certificates_to_project_root() {
+  local owner_group
+
   run_as_root test -f "$CERTBOT_LIVE_DIR/fullchain.pem"
   run_as_root test -f "$CERTBOT_LIVE_DIR/privkey.pem"
+
+  if run_as_root test -f "$DEST_FULLCHAIN"; then
+    owner_group="$(run_as_root stat -c '%U:%G' "$DEST_FULLCHAIN")"
+  elif [ -n "${SUDO_USER:-}" ]; then
+    owner_group="${SUDO_USER}:${SUDO_USER}"
+  else
+    owner_group="$(id -un):$(id -gn)"
+  fi
 
   run_as_root cp "$CERTBOT_LIVE_DIR/fullchain.pem" "$DEST_FULLCHAIN"
   run_as_root cp "$CERTBOT_LIVE_DIR/privkey.pem" "$DEST_PRIVKEY"
 
-  run_as_root chmod 666 "$DEST_FULLCHAIN" "$DEST_PRIVKEY"
+  run_as_root chown "$owner_group" "$DEST_FULLCHAIN" "$DEST_PRIVKEY"
+  run_as_root chmod 660 "$DEST_FULLCHAIN" "$DEST_PRIVKEY"
 }
 
 issue_certificate() {
+  # --standalone uses an internal webserver and requires port 80 to be available.
   run_as_root certbot certonly --standalone -d "$DOMAINS"
   sync_certificates_to_project_root
 }
@@ -44,7 +56,7 @@ renew_certificate() {
 
 install_renewal_schedule() {
   local cron_line
-  cron_line="0 3 1 */3 * root $CRON_CMD"
+  cron_line="0 3 1 * * root $CRON_CMD"
 
   run_as_root sh -c "printf '%s\n' '$cron_line' > '$CRON_FILE'"
   run_as_root chmod 644 "$CRON_FILE"
