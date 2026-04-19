@@ -6,6 +6,7 @@ SCRIPT_PATH="$PROJECT_ROOT/scripts/certbot_certificate.sh"
 
 DOMAINS="${CERTBOT_DOMAINS:-amiiboapi.org,www.amiiboapi.org}"
 PRIMARY_DOMAIN="${CERTBOT_PRIMARY_DOMAIN:-amiiboapi.org}"
+CERTBOT_EMAIL="${CERTBOT_EMAIL:-}"
 CERTBOT_LIVE_DIR="/etc/letsencrypt/live/$PRIMARY_DOMAIN"
 
 DEST_FULLCHAIN="$PROJECT_ROOT/fullchain.pem"
@@ -44,8 +45,17 @@ sync_certificates_to_project_root() {
 }
 
 issue_certificate() {
+  local certbot_args
+
+  certbot_args=(certonly --standalone --non-interactive --agree-tos -d "$DOMAINS")
+  if [ -n "$CERTBOT_EMAIL" ]; then
+    certbot_args+=(--email "$CERTBOT_EMAIL")
+  else
+    certbot_args+=(--register-unsafely-without-email)
+  fi
+
   # --standalone uses an internal webserver and requires port 80 to be available.
-  run_as_root certbot certonly --standalone -d "$DOMAINS"
+  run_as_root certbot "${certbot_args[@]}"
   sync_certificates_to_project_root
 }
 
@@ -56,7 +66,7 @@ renew_certificate() {
 
 install_renewal_schedule() {
   local cron_line
-  cron_line="0 3 1 * * root $CRON_CMD"
+  cron_line="0 3 * * * root $CRON_CMD"
 
   run_as_root sh -c "printf '%s\n' '$cron_line' > '$CRON_FILE'"
   run_as_root chmod 644 "$CRON_FILE"
@@ -75,6 +85,7 @@ Commands:
 Environment variables:
   CERTBOT_DOMAINS         Comma-separated domain list (default: $DOMAINS)
   CERTBOT_PRIMARY_DOMAIN  Domain used under /etc/letsencrypt/live (default: $PRIMARY_DOMAIN)
+  CERTBOT_EMAIL           Contact email for Let's Encrypt registration
 EOF
 }
 

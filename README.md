@@ -52,7 +52,7 @@ This script:
 - Registers/requests a certificate with certbot (`amiiboapi.org,www.amiiboapi.org` by default)
 - Copies `fullchain.pem` and `privkey.pem` from `/etc/letsencrypt/live/amiiboapi.org/` into the project root
 - Sets file permissions to read/write for owner+group (`660`) on both certificate files
-- Installs `/etc/cron.d/amiiboapi-certbot` to run monthly renewal checks (`certbot renew` only renews near expiry)
+- Installs `/etc/cron.d/amiiboapi-certbot` to run daily renewal checks (`certbot renew` only renews near expiry, roughly every 3 months)
 
 > [!IMPORTANT]
 > `certbot --standalone` needs port `80` available. Stop any process using port `80` before running issuance if needed.
@@ -61,6 +61,12 @@ If needed, set custom domains:
 
 ```bash
 CERTBOT_DOMAINS="example.org,www.example.org" CERTBOT_PRIMARY_DOMAIN="example.org" ./scripts/certbot_certificate.sh all
+```
+
+Optional (recommended) email for Let's Encrypt expiration notices:
+
+```bash
+CERTBOT_EMAIL="admin@example.org" ./scripts/certbot_certificate.sh all
 ```
 
 ### Heroku Setup (if you want to host)
