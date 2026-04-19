@@ -55,18 +55,29 @@ issue_certificate() {
   fi
 
   # --standalone uses an internal web server and requires port 80 to be available.
-  run_as_root certbot "${certbot_args[@]}"
+  if ! run_as_root certbot "${certbot_args[@]}"; then
+    echo "Certificate issuance failed. Ensure DNS points to this host and port 80 is available for certbot --standalone." >&2
+    exit 1
+  fi
   sync_certificates_to_project_root
 }
 
 renew_certificate() {
-  run_as_root certbot renew --quiet
+  if ! run_as_root certbot renew; then
+    echo "Certificate renewal failed. Check certbot output above and /var/log/amiiboapi-certbot.log for details." >&2
+    exit 1
+  fi
   sync_certificates_to_project_root
 }
 
 install_renewal_schedule() {
   local cron_cmd cron_line
-  printf -v cron_cmd '/bin/bash %q renew >> %q 2>&1' "$SCRIPT_PATH" "$LOG_FILE"
+  if [[ "$SCRIPT_PATH" == *" "* || "$LOG_FILE" == *" "* ]]; then
+    echo "SCRIPT_PATH and LOG_FILE must not contain spaces for cron setup." >&2
+    exit 1
+  fi
+
+  cron_cmd="/bin/bash \"$SCRIPT_PATH\" renew >> \"$LOG_FILE\" 2>&1"
   cron_line="0 3 * * * root $cron_cmd"
 
   run_as_root touch "$LOG_FILE"
