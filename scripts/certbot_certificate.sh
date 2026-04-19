@@ -13,7 +13,8 @@ DEST_FULLCHAIN="$PROJECT_ROOT/fullchain.pem"
 DEST_PRIVKEY="$PROJECT_ROOT/privkey.pem"
 
 CRON_FILE="/etc/cron.d/amiiboapi-certbot"
-CRON_CMD="/bin/bash $SCRIPT_PATH renew >> /var/log/amiiboapi-certbot.log 2>&1"
+LOG_FILE="/var/log/amiiboapi-certbot.log"
+CRON_CMD="/bin/bash $SCRIPT_PATH renew >> $LOG_FILE 2>&1"
 
 run_as_root() {
   if [ "${EUID:-$(id -u)}" -eq 0 ]; then
@@ -47,7 +48,7 @@ sync_certificates_to_project_root() {
 issue_certificate() {
   local certbot_args
 
-  certbot_args=(certonly --standalone --non-interactive --agree-tos -d "$DOMAINS")
+  certbot_args=(certonly --standalone --non-interactive --agree-tos --domains "$DOMAINS")
   if [ -n "$CERTBOT_EMAIL" ]; then
     certbot_args+=(--email "$CERTBOT_EMAIL")
   else
@@ -68,6 +69,8 @@ install_renewal_schedule() {
   local cron_line
   cron_line="0 3 * * * root $CRON_CMD"
 
+  run_as_root touch "$LOG_FILE"
+  run_as_root chmod 644 "$LOG_FILE"
   run_as_root sh -c "printf '%s\n' '$cron_line' > '$CRON_FILE'"
   run_as_root chmod 644 "$CRON_FILE"
 }
