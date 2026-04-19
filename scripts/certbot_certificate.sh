@@ -1,0 +1,97 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+SCRIPT_PATH="$PROJECT_ROOT/scripts/certbot_certificate.sh"
+
+DOMAINS="${CERTBOT_DOMAINS:-amiiboapi.org,www.amiiboapi.org}"
+PRIMARY_DOMAIN="${CERTBOT_PRIMARY_DOMAIN:-amiiboapi.org}"
+CERTBOT_LIVE_DIR="/etc/letsencrypt/live/$PRIMARY_DOMAIN"
+
+DEST_FULLCHAIN="$PROJECT_ROOT/fullchain.pem"
+DEST_PRIVKEY="$PROJECT_ROOT/privkey.pem"
+
+CRON_FILE="/etc/cron.d/amiiboapi-certbot"
+CRON_CMD="/bin/bash $SCRIPT_PATH renew >> /var/log/amiiboapi-certbot.log 2>&1"
+
+run_as_root() {
+  if [ "${EUID:-$(id -u)}" -eq 0 ]; then
+    "$@"
+  else
+    sudo "$@"
+  fi
+}
+
+sync_certificates_to_project_root() {
+  run_as_root test -f "$CERTBOT_LIVE_DIR/fullchain.pem"
+  run_as_root test -f "$CERTBOT_LIVE_DIR/privkey.pem"
+
+  run_as_root cp "$CERTBOT_LIVE_DIR/fullchain.pem" "$DEST_FULLCHAIN"
+  run_as_root cp "$CERTBOT_LIVE_DIR/privkey.pem" "$DEST_PRIVKEY"
+
+  run_as_root chmod 666 "$DEST_FULLCHAIN" "$DEST_PRIVKEY"
+}
+
+issue_certificate() {
+  run_as_root certbot certonly --standalone -d "$DOMAINS"
+  sync_certificates_to_project_root
+}
+
+renew_certificate() {
+  run_as_root certbot renew --quiet
+  sync_certificates_to_project_root
+}
+
+install_renewal_schedule() {
+  local cron_line
+  cron_line="0 3 1 */3 * root $CRON_CMD"
+
+  run_as_root sh -c "printf '%s\n' '$cron_line' > '$CRON_FILE'"
+  run_as_root chmod 644 "$CRON_FILE"
+}
+
+usage() {
+  cat <<EOF
+Usage: $(basename "$0") [issue|renew|install-cron|all]
+
+Commands:
+  issue         Request/refresh the certificate for domains: $DOMAINS
+  renew         Run certbot renew and re-copy certificates to project root
+  install-cron  Install /etc/cron.d schedule to renew every 3 months
+  all           issue + install-cron (default)
+
+Environment variables:
+  CERTBOT_DOMAINS         Comma-separated domain list (default: $DOMAINS)
+  CERTBOT_PRIMARY_DOMAIN  Domain used under /etc/letsencrypt/live (default: $PRIMARY_DOMAIN)
+EOF
+}
+
+main() {
+  local command="${1:-all}"
+
+  case "$command" in
+    issue)
+      issue_certificate
+      ;;
+    renew)
+      renew_certificate
+      ;;
+    install-cron)
+      install_renewal_schedule
+      ;;
+    all)
+      issue_certificate
+      install_renewal_schedule
+      ;;
+    -h|--help|help)
+      usage
+      ;;
+    *)
+      echo "Unknown command: $command" >&2
+      usage
+      exit 1
+      ;;
+  esac
+}
+
+main "$@"

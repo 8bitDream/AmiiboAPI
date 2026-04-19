@@ -40,6 +40,26 @@ More APIs examples can be found here: [https://www.amiiboapi.org/docs/](https://
 2. Install the requirements using `pip install -r requirements.txt`
 3. Run `app.py` or launch via `gunicorn app:app`
 
+### SSL Certificate Setup (EC2 + Let's Encrypt / Certbot)
+For EC2 deployments where the app runs directly from this project root (no `/www` directory), use:
+
+```bash
+chmod +x scripts/certbot_certificate.sh
+./scripts/certbot_certificate.sh all
+```
+
+This script:
+- Registers/requests a certificate with certbot (`amiiboapi.org,www.amiiboapi.org` by default)
+- Copies `fullchain.pem` and `privkey.pem` from `/etc/letsencrypt/live/amiiboapi.org/` into the project root
+- Sets file permissions to read/write (`666`) on both certificate files
+- Installs `/etc/cron.d/amiiboapi-certbot` to renew every 3 months
+
+If needed, set custom domains:
+
+```bash
+CERTBOT_DOMAINS="example.org,www.example.org" CERTBOT_PRIMARY_DOMAIN="example.org" ./scripts/certbot_certificate.sh all
+```
+
 ### Heroku Setup (if you want to host)
 Click on the `Deploy to Heroku` button and you are good to go!
 *Heroku is a paid service and requires an account to use*

@@ -94,3 +94,7 @@ images/coming soon
 
 Pipfile
 Pipfile.*
+
+# Runtime TLS certificates copied from /etc/letsencrypt/live
+fullchain.pem
+privkey.pem
