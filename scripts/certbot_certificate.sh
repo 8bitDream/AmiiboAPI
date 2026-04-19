@@ -79,7 +79,7 @@ Usage: $(basename "$0") [issue|renew|install-cron|all]
 Commands:
   issue         Request/refresh the certificate for domains: $DOMAINS
   renew         Run certbot renew and re-copy certificates to project root
-  install-cron  Install /etc/cron.d schedule to renew every 3 months
+  install-cron  Install /etc/cron.d schedule for daily renewal checks
   all           issue + install-cron (default)
 
 Environment variables:
