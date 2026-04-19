@@ -49,7 +49,7 @@ Certbot is included for container/self-hosted deployments with automatic renewal
 
 - Default certificate domain: `amiiboapi.org`
 - Default webroot for ACME challenges: `/var/www/certbot`
-- Renewal schedule: daily at `03:00` server time via cron
+- Renewal schedule: twice daily at `03:00` and `15:00` server time via cron
 
 #### Environment variables
 - `ENABLE_CERTBOT_AUTO_SSL` (default: `1`) enable/disable Certbot bootstrap and renewal setup on container startup
@@ -66,6 +66,8 @@ Certbot is included for container/self-hosted deployments with automatic renewal
 #### Manual commands
 - Initial setup: `sh deploy/certbot/bootstrap.sh`
 - Renewal run: `sh deploy/certbot/renew.sh`
+
+> Renewal scheduling writes to `/etc/cron.d/certbot-renew` and uses root because Certbot certificate files are stored under `/etc/letsencrypt`.
 
 ### Credit
 - [Brickleberry19 - Amiibo IDs](https://github.com/Brickleberry19)
