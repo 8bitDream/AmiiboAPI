@@ -457,10 +457,6 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
-							"write": false
 						}
 					]
 				},
@@ -1027,7 +1023,15 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
@@ -2203,7 +2207,15 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
@@ -2784,18 +2796,6 @@
 					]
 				},
 				{
-					"gameName": "Super Mario Bros. Wonder",
-					"gameID": [
-						"010015100B514000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Super Mario Galaxy",
 					"gameID": [
 						"010099C022B96000"
@@ -3356,18 +3356,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Super Mario Bros. Wonder",
-					"gameID": [
-						"010015100B514000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -3945,7 +3933,15 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
@@ -4112,10 +4108,6 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
-							"write": false
 						}
 					]
 				},
@@ -4258,10 +4250,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
-							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -4802,10 +4790,6 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
-							"write": false
 						}
 					]
 				},
@@ -5097,18 +5081,6 @@
 					]
 				},
 				{
-					"gameName": "One Piece: Super Grand Battle! X",
-					"gameID": [
-						"0004000000144400"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based costume with special abilities",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Picross 3D Round 2",
 					"gameID": [
 						"0004000000187E00"
@@ -5358,18 +5330,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Super Mario Bros. Wonder",
-					"gameID": [
-						"010015100B514000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -5648,18 +5608,6 @@
 					]
 				},
 				{
-					"gameName": "One Piece: Super Grand Battle! X",
-					"gameID": [
-						"0004000000144400"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based costume with special abilities",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Picross 3D Round 2",
 					"gameID": [
 						"0004000000187E00"
@@ -5922,7 +5870,15 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
@@ -6182,18 +6138,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Play stages as a Mini version of this character, with a unique special ability, and unlock character-specific stages",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "One Piece: Super Grand Battle! X",
-					"gameID": [
-						"0004000000144400"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based costume with special abilities",
 							"write": false
 						}
 					]
@@ -6721,18 +6665,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Play stages as a Mini version of this character, with a unique special ability, and unlock character-specific stages",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "One Piece: Super Grand Battle! X",
-					"gameID": [
-						"0004000000144400"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based costume with special abilities",
 							"write": false
 						}
 					]
@@ -7487,18 +7419,6 @@
 					]
 				},
 				{
-					"gameName": "Super Mario Bros. Wonder",
-					"gameID": [
-						"010015100B514000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Super Mario Galaxy",
 					"gameID": [
 						"010099C022B96000"
@@ -8148,18 +8068,6 @@
 					]
 				},
 				{
-					"gameName": "Super Mario Bros. Wonder",
-					"gameID": [
-						"010015100B514000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Super Mario Galaxy",
 					"gameID": [
 						"010099C022B96000"
@@ -8638,18 +8546,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the character",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Super Mario Bros. Wonder",
-					"gameID": [
-						"010015100B514000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -9141,10 +9037,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
-							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -9664,7 +9556,15 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
@@ -10196,7 +10096,15 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
@@ -10374,10 +10282,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
-							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -10869,10 +10773,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
-							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -11377,7 +11277,15 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
@@ -11805,10 +11713,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
-							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -12262,7 +12166,15 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
@@ -12392,10 +12304,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
-							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -12822,10 +12730,6 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
-							"write": false
 						}
 					]
 				},
@@ -12998,18 +12902,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Play stages as a Mini version of this character, with a unique special ability, and unlock character-specific stages",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "One Piece: Super Grand Battle! X",
-					"gameID": [
-						"0004000000144400"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based costume with special abilities",
 							"write": false
 						}
 					]
@@ -13270,10 +13162,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
-							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -13452,18 +13340,6 @@
 					]
 				},
 				{
-					"gameName": "One Piece: Super Grand Battle! X",
-					"gameID": [
-						"0004000000144400"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based costume with special abilities",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Picross 3D Round 2",
 					"gameID": [
 						"0004000000187E00"
@@ -13738,18 +13614,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Super Mario Bros. Wonder",
-					"gameID": [
-						"010015100B514000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -13928,18 +13792,6 @@
 					]
 				},
 				{
-					"gameName": "One Piece: Super Grand Battle! X",
-					"gameID": [
-						"0004000000144400"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based costume with special abilities",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Picross 3D Round 2",
 					"gameID": [
 						"0004000000187E00"
@@ -14214,18 +14066,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Super Mario Bros. Wonder",
-					"gameID": [
-						"010015100B514000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -14404,18 +14244,6 @@
 					]
 				},
 				{
-					"gameName": "One Piece: Super Grand Battle! X",
-					"gameID": [
-						"0004000000144400"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based costume with special abilities",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Picross 3D Round 2",
 					"gameID": [
 						"0004000000187E00"
@@ -14671,10 +14499,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
-							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -15079,7 +14903,15 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
@@ -15446,18 +15278,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Super Mario Bros. Wonder",
-					"gameID": [
-						"010015100B514000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -16282,10 +16102,6 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
-							"write": false
 						}
 					]
 				},
@@ -16772,7 +16588,15 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
@@ -17272,7 +17096,15 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
@@ -17759,10 +17591,6 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
-							"write": false
 						}
 					]
 				},
@@ -18099,10 +17927,6 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
-							"write": false
 						}
 					]
 				},
@@ -18375,10 +18199,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
-							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -18692,7 +18512,15 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
@@ -19060,10 +18888,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
-							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -19458,7 +19282,15 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
@@ -19577,10 +19409,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
-							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -19743,18 +19571,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Play stages as a Mini version of this character, with a unique special ability, and unlock character-specific stages",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "One Piece: Super Grand Battle! X",
-					"gameID": [
-						"0004000000144400"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based costume with special abilities",
 							"write": false
 						}
 					]
@@ -19947,10 +19763,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
-							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -20130,18 +19942,6 @@
 					]
 				},
 				{
-					"gameName": "One Piece: Super Grand Battle! X",
-					"gameID": [
-						"0004000000144400"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based costume with special abilities",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Super Smash Bros. for Nintendo 3DS",
 					"gameID": [
 						"00040000000EDF00",
@@ -20329,10 +20129,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
-							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -20588,10 +20384,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
-							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -20887,7 +20679,15 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
@@ -20994,10 +20794,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
-							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -21457,7 +21253,15 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
@@ -21576,10 +21380,6 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
-							"write": false
 						}
 					]
 				},
@@ -21636,19 +21436,6 @@
 		},
 		"0x000a010004c20102": {
 			"games3DS": [
-				{
-					"gameName": "Captain Toad: Treasure Tracker",
-					"gameID": [
-						"00040000001CB100",
-						"00040000001CB200"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive an invincibility mushroom",
-							"write": false
-						}
-					]
-				},
 				{
 					"gameName": "Chibi-Robo! Zip Lash",
 					"gameID": [
@@ -21930,18 +21717,6 @@
 			],
 			"gamesSwitch": [
 				{
-					"gameName": "Captain Toad: Treasure Tracker",
-					"gameID": [
-						"01009BF0072D4000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive an invincibility mushroom",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Conga Master Party!",
 					"gameID": [
 						"01007EF00399C000"
@@ -22201,7 +21976,15 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
@@ -22389,10 +22172,6 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
-							"write": false
 						}
 					]
 				},
@@ -22507,10 +22286,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
-							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -22688,7 +22463,15 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
@@ -22881,6 +22664,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -23105,7 +22900,15 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
@@ -23272,7 +23075,15 @@
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
 							"write": false
-						},
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Bros. Wonder",
+					"gameID": [
+						"010015100B514000"
+					],
+					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
@@ -23366,10 +23177,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
-							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -23513,10 +23320,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Change to character-themed decoration in Bellabel Park hub (Switch 2 Edition only)",
-							"write": false
-						},
-						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
 							"write": false
 						}
 					]
@@ -28466,18 +28269,6 @@
 					]
 				},
 				{
-					"gameName": "One Piece: Super Grand Battle! X",
-					"gameID": [
-						"0004000000144400"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based costume with special abilities",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Picross 3D Round 2",
 					"gameID": [
 						"0004000000187E00"
@@ -28894,18 +28685,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Unlock a character-based costume",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "One Piece: Super Grand Battle! X",
-					"gameID": [
-						"0004000000144400"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based costume with special abilities",
 							"write": false
 						}
 					]
@@ -99690,18 +99469,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Unlock a character-based costume",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "One Piece: Super Grand Battle! X",
-					"gameID": [
-						"0004000000144400"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based costume with special abilities",
 							"write": false
 						}
 					]
