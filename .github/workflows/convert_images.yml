@@ -5,6 +5,9 @@ on:
     branches: [ dev ]
     paths:
       - 'images/**/*.png'
+  workflows: ["Update json"]
+  types:
+    - completed
   workflow_dispatch:
 
 jobs:
