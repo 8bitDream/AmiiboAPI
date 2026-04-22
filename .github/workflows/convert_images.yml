@@ -2,6 +2,7 @@ name: Convert PNG to WebP
 
 on:
   push:
+    branches: [ dev ]
     paths:
       - 'images/**/*.png'
   workflow_dispatch:
@@ -31,7 +32,6 @@ jobs:
           else
             IMAGEMAGICK_CMD="convert"
           fi
-
           while IFS= read -r -d '' png_file; do
             relative_path="${png_file#images/}"
             relative_base="${relative_path%.png}"
@@ -40,7 +40,15 @@ jobs:
             mkdir -p "$(dirname "${webp_file}")"
 
             if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ ! -f "${webp_file}" ]; then
-              "${IMAGEMAGICK_CMD}" "${png_file}" "${webp_file}"
+              "${IMAGEMAGICK_CMD}" "${png_file}" \
+                -strip \
+                -quality 90 \
+                -define webp:lossless=false \
+                -define webp:method=6 \
+                -define webp:auto-filter=true \
+                -define webp:alpha-quality=100 \
+                -define webp:use-sharp-yuv=true \
+                "${webp_file}"
               echo "${webp_file}" >> /tmp/converted_webp_files.txt
             fi
           done < <(find images -type f -name '*.png' -print0)
@@ -63,6 +71,6 @@ jobs:
 
           git config --local user.name 'AmiiboAPI (Automated)'
           git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          if git commit -m "[Automated] Add missing WebP images"; then
+          if git commit -m "[Automated] Convert PNG to WebP images"; then
             git push
           fi
