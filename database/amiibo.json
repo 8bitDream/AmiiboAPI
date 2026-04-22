@@ -1145,6 +1145,17 @@
 				"jp": "2026-03-13"
 			}
 		},
+		"0x3580000005062102":
+		{
+			"name": "Diana",
+			"release":
+			{
+				"au": "2026-04-17",
+				"na": "2026-04-17",
+				"eu": "2026-06-11",
+				"jp": "2026-04-24"
+			}
+		},
 		"0x000000030430ff02":
 		{
 			"name": "Golden - Power Up Band",
@@ -10380,7 +10391,8 @@
 		"0x1b": "Xenoblade Chronicles 3",
 		"0x1c": "My Mario Wooden Blocks",
 		"0x1d": "Street Fighter 6",
-		"0x1e": "Kirby Air Riders"
+		"0x1e": "Kirby Air Riders",
+		"0x21": "Pragmata"
 	},
 	"game_series":
 	{
@@ -10500,7 +10512,8 @@
 		"0x37c": "Castlevania",
 		"0x348": "Megaman",
 		"0x1b9": "Pokemon",
-		"0x22c": "Chibi Robo"
+		"0x22c": "Chibi Robo",
+		"0x358": "Pragmata"
 	},
 	"types":
 	{
@@ -11191,6 +11204,7 @@
 		"0x07c0": "Mii",
 		"0x2243": "Noah",
 		"0x2244": "Mio",
-		"0x3f00": "Sora"
+		"0x3f00": "Sora",
+		"0x3580": "Diana"
 	}
 }
