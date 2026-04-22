@@ -2,6 +2,7 @@ name: Convert PNG to WebP
 
 on:
   push:
+    branches: [ dev ]
     paths:
       - 'images/**/*.png'
   workflow_dispatch:
