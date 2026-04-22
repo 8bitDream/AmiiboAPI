@@ -1,7 +1,7 @@
 name: Update json
 on:
   push:
-    branches: [ dev ]
+    branches: [ master ]
     paths:
       - 'database/**'
   workflow_dispatch:
