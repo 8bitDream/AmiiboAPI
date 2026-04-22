@@ -80,7 +80,7 @@ install_renewal_schedule() {
   printf -v quoted_script_path '%q' "$SCRIPT_PATH"
   printf -v quoted_log_file '%q' "$LOG_FILE"
   cron_cmd="/bin/bash $quoted_script_path renew >> $quoted_log_file 2>&1"
-  cron_line="0 3,15 * * * root $cron_cmd"
+  cron_line="0 3 1 */3 * root $cron_cmd"
 
   run_as_root touch "$LOG_FILE"
   run_as_root chmod 644 "$LOG_FILE"
@@ -95,7 +95,7 @@ Usage: $(basename "$0") [issue|renew|install-cron|all]
 Commands:
   issue         Request/refresh the certificate for domains: $DOMAINS
   renew         Run certbot renew and re-copy certificates to project root
-  install-cron  Install /etc/cron.d schedule for daily renewal checks
+  install-cron  Install /etc/cron.d schedule for quarterly renewal checks
   all           issue + install-cron (default)
 
 Environment variables:

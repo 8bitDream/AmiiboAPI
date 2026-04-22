@@ -52,7 +52,7 @@ This script:
 - Registers/requests a certificate with certbot (`amiiboapi.org,www.amiiboapi.org` by default)
 - Copies `fullchain.pem` and `privkey.pem` from `/etc/letsencrypt/live/amiiboapi.org/` into the project root
 - Sets file permissions to read/write for owner+group (`660`) on both certificate files
-- Installs `/etc/cron.d/amiiboapi-certbot` to run renewal checks twice daily
+- Installs `/etc/cron.d/amiiboapi-certbot` to run renewal checks every 3 months
 - `certbot renew` attempts renewal for certificates with 30 days or less remaining (90-day validity period)
 
 > [!IMPORTANT]
