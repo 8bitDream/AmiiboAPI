@@ -97789,7 +97789,22 @@
 		},
 		"0x05840000037e0002": {
 			"games3DS": [],
-			"gamesWiiU": [],
+			"gamesWiiU": [
+				{
+					"gameName": "Star Fox Zero",
+					"gameID": [
+						"00050000101AFF00",
+						"00050000101B0400",
+						"00050000101B0500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Play as a black Arwing",
+							"write": false
+						}
+					]
+				}
+			],
 			"gamesSwitch": [
 				{
 					"gameName": "Super Smash Bros. Ultimate",
