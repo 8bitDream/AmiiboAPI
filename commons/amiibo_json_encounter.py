@@ -30,6 +30,8 @@ class AmiiboJSONEncoder(JSONEncoder):
                 'imgwebp': "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/webp/icon_{}-{}.webp".format(str(obj.head)[2:], str(obj.tail)[2:]),
                 'release': obj.release
             }
+            if obj.variant is not None:
+                returner['variant'] = obj.variant
             try:
                 returner.update({'games3DS': obj.games3DS, 'gamesWiiU': obj.gamesWiiU, 'gamesSwitch': obj.gamesSwitch, 'gamesSwitch2': obj.gamesSwitch2})
             except AttributeError:

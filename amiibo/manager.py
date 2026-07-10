@@ -33,23 +33,27 @@ class AmiiboManager:
         return AmiiboManager.__instance
 
     def to_json(self, file='database/amiibo.json'):
+        amiibos = {}
+        for amiibo in self.amiibosfull:
+            amiibo_data = {
+                'name': amiibo.name,
+                'release': {
+                    'na': amiibo.release.na.isoformat() if amiibo.release.na else None,
+                    'jp': amiibo.release.jp.isoformat() if amiibo.release.jp else None,
+                    'eu': amiibo.release.eu.isoformat() if amiibo.release.eu else None,
+                    'au': amiibo.release.au.isoformat() if amiibo.release.au else None,
+                },
+                'games3DS': amiibo.games3DS,
+                'gamesWiiU': amiibo.gamesWiiU,
+                'gamesSwitch': amiibo.gamesSwitch,
+                'gamesSwitch2': amiibo.gamesSwitch2
+            }
+            if amiibo.variant is not None:
+                amiibo_data['variant'] = amiibo.variant
+            amiibos[str(amiibo.id)] = amiibo_data
+
         data = {
-            'amiibos': {
-                str(amiibo.id): {
-                    'name': amiibo.name,
-                    'release': {
-                        'na': amiibo.release.na.isoformat() if amiibo.release.na else None,
-                        'jp': amiibo.release.jp.isoformat() if amiibo.release.jp else None,
-                        'eu': amiibo.release.eu.isoformat() if amiibo.release.eu else None,
-                        'au': amiibo.release.au.isoformat() if amiibo.release.au else None,
-                    },
-                    'games3DS': amiibo.games3DS,
-                    'gamesWiiU': amiibo.gamesWiiU,
-                    'gamesSwitch': amiibo.gamesSwitch,
-                    'gamesSwitch2': amiibo.gamesSwitch2
-                }
-                for amiibo in self.amiibosfull
-            },
+            'amiibos': amiibos,
             'game_series': {
                 str(game_series.id): game_series.name
                 for game_series in self.game_series
@@ -84,7 +88,7 @@ class AmiiboManager:
                         jp=AmiiboManager._parse_date(amiibo['release']['jp']),
                         eu=AmiiboManager._parse_date(amiibo['release']['eu']),
                         au=AmiiboManager._parse_date(amiibo['release']['au']),
-                ), data1['amiibos'][id_]['games3DS'], data1['amiibos'][id_]['gamesWiiU'], data1['amiibos'][id_]['gamesSwitch'], data1['amiibos'][id_]['gamesSwitch2'])
+                ), amiibo.get('variant'), data1['amiibos'][id_]['games3DS'], data1['amiibos'][id_]['gamesWiiU'], data1['amiibos'][id_]['gamesSwitch'], data1['amiibos'][id_]['gamesSwitch2'])
                 for id_, amiibo in data['amiibos'].items()
         )
 
@@ -94,7 +98,7 @@ class AmiiboManager:
                         jp=AmiiboManager._parse_date(amiibo['release']['jp']),
                         eu=AmiiboManager._parse_date(amiibo['release']['eu']),
                         au=AmiiboManager._parse_date(amiibo['release']['au']),
-                ), data1['amiibos'][id_]['games3DS'], data1['amiibos'][id_]['gamesWiiU'], data1['amiibos'][id_]['gamesSwitch'], data1['amiibos'][id_]['gamesSwitch2'])
+                ), amiibo.get('variant'), data1['amiibos'][id_]['games3DS'], data1['amiibos'][id_]['gamesWiiU'], data1['amiibos'][id_]['gamesSwitch'], data1['amiibos'][id_]['gamesSwitch2'])
                 for id_, amiibo in data['amiibos'].items()
         )
         for amiibo in self.amiibosfullwithoutusage:
@@ -130,7 +134,7 @@ class AmiiboManager:
                         jp=self._parse_date(amiibo['release']['jp']),
                         eu=self._parse_date(amiibo['release']['eu']),
                         au=self._parse_date(amiibo['release']['au']),
-                ), None, None, None, None) # TODO: add custom Amiibo class that doesn't need the games
+                ), amiibo.get('variant'), None, None, None, None) # TODO: add custom Amiibo class that doesn't need the games
                 for id_, amiibo in data['amiibos'].items()
         )
         for amiibo in self.amiibos:

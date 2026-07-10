@@ -22,6 +22,7 @@ game_series_regex = re.compile('^0x[0-9a-f]{3}')
 types_regex = re.compile('^0x[0-9a-f]{2}')
 game_id_regex = re.compile('^[0-9A-F]{16}')
 date_regex = re.compile('^\d{4}-\d{2}-\d{2}')
+variant_regex = re.compile('^[0-9A-Fa-f]{8}$')
 
 # set success exit code
 exit_code = 0
@@ -125,6 +126,10 @@ for key in database['amiibos']:
 				printError(1, 'NA release not set for: ' + key)
 		else:
 			printError(1, 'Release not set for: ' + key)
+
+		if 'variant' in amiibo:
+			if amiibo['variant'] is not None and (not isinstance(amiibo['variant'], str) or bool(variant_regex.match(amiibo['variant'])) == False):
+				printError(1, 'Formatting error on variant for: ' + key)
 
 		# check if corresponding amiibo_series key exists
 		if amiibo_series not in database['amiibo_series']:
