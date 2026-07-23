@@ -160,12 +160,12 @@
         </tr>
         <tr>
             <td>image</td>
-            <td>The PNG link of the amiibo.</td>
+            <td>The PNG link of the amiibo. If <code>variant</code> is populated, the filename includes it after an underscore.</td>
             <td>string</td>
         </tr>
         <tr>
             <td>imgwebp</td>
-            <td>The WebP link of the amiibo.</td>
+            <td>The WebP link of the amiibo. If <code>variant</code> is populated, the filename includes it after an underscore.</td>
             <td>string</td>
         </tr>
         <tr>
@@ -183,6 +183,11 @@
             <br>
             <td><b>Note:</b> If date is not available, it will return as <code>null</code></td>
             <td>json</td>
+        </tr>
+        <tr>
+            <td>variant</td>
+            <td>The optional 4-byte variant value from page 23 of the amiibo bin, bytes <code>0x5C</code> through <code>0x5F</code>. Example: <code>0D12B212</code>. Included only when populated.</td>
+            <td>string</td>
         </tr>
         <tr>
             <td>tail</td>
@@ -264,7 +269,7 @@
         </tr>
         <tr>
             <td>image</td>
-            <td>The image link of the amiibo.</td>
+            <td>The image link of the amiibo. If <code>variant</code> is populated, the filename includes it after an underscore.</td>
             <td>string</td>
         </tr>
         <tr>
@@ -282,6 +287,11 @@
             <br>
             <td><b>Note:</b> If date is not available, it will return as <code>null</code></td>
             <td>json</td>
+        </tr>
+        <tr>
+            <td>variant</td>
+            <td>The optional 4-byte variant value from page 23 of the amiibo bin, bytes <code>0x5C</code> through <code>0x5F</code>. Example: <code>0D12B212</code>. Included only when populated.</td>
+            <td>string</td>
         </tr>
         <tr>
             <td>tail</td>
@@ -361,7 +371,7 @@
         </tr>
         <tr>
             <td>image</td>
-            <td>The image link of the amiibo.</td>
+            <td>The image link of the amiibo. If <code>variant</code> is populated, the filename includes it after an underscore.</td>
             <td>string</td>
         </tr>
         <tr>
@@ -379,6 +389,11 @@
             <br>
             <td><b>Note:</b> If date is not available, it will return as <code>null</code></td>
             <td>json</td>
+        </tr>
+        <tr>
+            <td>variant</td>
+            <td>The optional 4-byte variant value from page 23 of the amiibo bin, bytes <code>0x5C</code> through <code>0x5F</code>. Example: <code>0D12B212</code>. Included only when populated.</td>
+            <td>string</td>
         </tr>
         <tr>
             <td>tail</td>
@@ -459,7 +474,7 @@
         </tr>
         <tr>
             <td>image</td>
-            <td>The image link of the amiibo.</td>
+            <td>The image link of the amiibo. If <code>variant</code> is populated, the filename includes it after an underscore.</td>
             <td>string</td>
         </tr>
         <tr>
@@ -477,6 +492,11 @@
             <br>
             <td><b>Warning:</b> If date is not available, it will return as <code>null</code></td>
             <td>json</td>
+        </tr>
+        <tr>
+            <td>variant</td>
+            <td>The optional 4-byte variant value from page 23 of the amiibo bin, bytes <code>0x5C</code> through <code>0x5F</code>. Example: <code>0D12B212</code>. Included only when populated.</td>
+            <td>string</td>
         </tr>
         <tr>
             <td>tail</td>
@@ -557,7 +577,7 @@
         </tr>
         <tr>
             <td>image</td>
-            <td>The image link of the amiibo.</td>
+            <td>The image link of the amiibo. If <code>variant</code> is populated, the filename includes it after an underscore.</td>
             <td>string</td>
         </tr>
         <tr>
@@ -576,6 +596,11 @@
                 <b>Warning:</b> If date is not available, it will return as <code>null</code>
             </td>
             <td>json</td>
+        </tr>
+        <tr>
+            <td>variant</td>
+            <td>The optional 4-byte variant value from page 23 of the amiibo bin, bytes <code>0x5C</code> through <code>0x5F</code>. Example: <code>0D12B212</code>. Included only when populated.</td>
+            <td>string</td>
         </tr>
         <tr>
             <td>tail</td>
@@ -720,7 +745,7 @@
         </tr>
         <tr>
             <td>image</td>
-            <td>The image link of the amiibo.</td>
+            <td>The image link of the amiibo. If <code>variant</code> is populated, the filename includes it after an underscore.</td>
             <td>string</td>
         </tr>
         <tr>
@@ -739,6 +764,11 @@
                 <b>Warning:</b> If date is not available, it will return as <code>null</code>
             </td>
             <td>json</td>
+        </tr>
+        <tr>
+            <td>variant</td>
+            <td>The optional 4-byte variant value from page 23 of the amiibo bin, bytes <code>0x5C</code> through <code>0x5F</code>. Example: <code>0D12B212</code>. Included only when populated.</td>
+            <td>string</td>
         </tr>
         <tr>
             <td>tail</td>
@@ -910,7 +940,7 @@
         </tr>
         <tr>
             <td>image</td>
-            <td>The image link of the amiibo.</td>
+            <td>The image link of the amiibo. If <code>variant</code> is populated, the filename includes it after an underscore.</td>
             <td>string</td>
         </tr>
         <tr>
@@ -929,6 +959,11 @@
                 <b>Warning:</b> If date is not available, it will return as <code>null</code>
             </td>
             <td>json</td>
+        </tr>
+        <tr>
+            <td>variant</td>
+            <td>The optional 4-byte variant value from page 23 of the amiibo bin, bytes <code>0x5C</code> through <code>0x5F</code>. Example: <code>0D12B212</code>. Included only when populated.</td>
+            <td>string</td>
         </tr>
         <tr>
             <td>tail</td>
