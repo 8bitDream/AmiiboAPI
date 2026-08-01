@@ -120296,6 +120296,18 @@
 			"gamesSwitch": [],
 			"gamesSwitch2": []
 		},
+		"0x3540000005032002": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": [],
+			"gamesSwitch2": []
+		},
+		"0x3541000005042002": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": [],
+			"gamesSwitch2": []
+		},
 		"0x35c0000002500a02": {
 			"games3DS": [
 				{
