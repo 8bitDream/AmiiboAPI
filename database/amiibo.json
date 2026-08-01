@@ -1189,6 +1189,28 @@
 				"jp": "2026-04-24"
 			}
 		},
+		"0x3540000005032002":
+		{
+			"name": "Grace Ashcroft",
+			"release":
+			{
+				"au": "2026-07-30",
+				"na": "2026-07-30",
+				"eu": "2026-07-30",
+				"jp": "2026-07-30"
+			}
+		},
+		"0x3541000005042002":
+		{
+			"name": "Leon S. Kennedy",
+			"release":
+			{
+				"au": "2026-07-30",
+				"na": "2026-07-30",
+				"eu": "2026-07-30",
+				"jp": "2026-07-30"
+			}
+		},
 		"0x000000030430ff02":
 		{
 			"name": "Golden - Power Up Band",
@@ -10557,7 +10579,8 @@
 		"0x348": "Megaman",
 		"0x1b9": "Pokemon",
 		"0x22c": "Chibi Robo",
-		"0x358": "Pragmata"
+		"0x358": "Pragmata",
+		"0x354": "Resident Evil"
 	},
 	"types":
 	{
@@ -11249,6 +11272,8 @@
 		"0x2243": "Noah",
 		"0x2244": "Mio",
 		"0x3f00": "Sora",
-		"0x3580": "Diana"
+		"0x3580": "Diana",
+		"0x3540": "Grace Ashcroft",
+		"0x3541": "Leon S. Kennedy"
 	}
 }
