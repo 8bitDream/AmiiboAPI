@@ -120290,12 +120290,6 @@
 			],
 			"gamesSwitch2": []
 		},
-		"0x3580000005062102": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch": [],
-			"gamesSwitch2": []
-		},
 		"0x3540000005032002": {
 			"games3DS": [],
 			"gamesWiiU": [],
@@ -120303,6 +120297,12 @@
 			"gamesSwitch2": []
 		},
 		"0x3541000005042002": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": [],
+			"gamesSwitch2": []
+		},
+		"0x3580000005062102": {
 			"games3DS": [],
 			"gamesWiiU": [],
 			"gamesSwitch": [],
