@@ -16,6 +16,7 @@ class AmiiboManager:
     characters = FilterableCollection()
     types = FilterableCollection()
     amiibo_series = FilterableCollection()
+    machine = {}
     last_updated = None
 
     def __init__(self):
@@ -54,6 +55,7 @@ class AmiiboManager:
 
         data = {
             'amiibos': amiibos,
+            'machine': self.machine,
             'game_series': {
                 str(game_series.id): game_series.name
                 for game_series in self.game_series
@@ -81,6 +83,8 @@ class AmiiboManager:
             data = json.load(f)
         with open(file1, 'r', encoding="utf-8-sig") as g:
             data1 = json.load(g)
+
+        self.machine = data.get('machine', {})
 
         self.amiibosfull.update(
                 Amiibo(self, id_[2:10], id_[10:18], amiibo['name'], AmiiboReleaseDates(

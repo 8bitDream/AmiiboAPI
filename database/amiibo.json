@@ -10426,6 +10426,25 @@
 			}
 		}
 	},
+	"machine":
+	{
+		"0x1f00000004c41e03":
+		{
+			"name": "Warp Star"
+		},
+		"0x1f01000004c61e03":
+		{
+			"name": "Shadow Star"
+		},
+		"0x1f02000004c71e03":
+		{
+			"name": "Tank Star"
+		},
+		"0x1f03010004c91e03":
+		{
+			"name": "Winged Star"
+		}
+	},
 	"amiibo_series":
 	{
 		"0x0a": "Shovel Knight",
