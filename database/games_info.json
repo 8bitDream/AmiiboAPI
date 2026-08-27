@@ -120250,7 +120250,20 @@
 					]
 				}
 			],
-			"gamesSwitch2": []
+			"gamesSwitch2": [
+				{
+					"gameName": "Monster Hunter Stories 3: Twisted Reflection",
+					"gameID": [
+						"0400D1E0237CC000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive amiibo-exclusive, amiibo-specific layered armor or Rudy outfit",
+							"write": false
+						}
+					]
+				}
+			]
 		},
 		"0x350d000004fb0f02": {
 			"games3DS": [],
@@ -120269,7 +120282,20 @@
 					]
 				}
 			],
-			"gamesSwitch2": []
+			"gamesSwitch2": [
+				{
+					"gameName": "Monster Hunter Stories 3: Twisted Reflection",
+					"gameID": [
+						"0400D1E0237CC000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive amiibo-exclusive, amiibo-specific layered armor or Rudy outfit",
+							"write": false
+						}
+					]
+				}
+			]
 		},
 		"0x350e000004fc0f02": {
 			"games3DS": [],
@@ -120288,19 +120314,58 @@
 					]
 				}
 			],
-			"gamesSwitch2": []
+			"gamesSwitch2": [
+				{
+					"gameName": "Monster Hunter Stories 3: Twisted Reflection",
+					"gameID": [
+						"0400D1E0237CC000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive amiibo-exclusive, amiibo-specific layered armor or Rudy outfit",
+							"write": false
+						}
+					]
+				}
+			]
 		},
 		"0x3540000005032002": {
 			"games3DS": [],
 			"gamesWiiU": [],
 			"gamesSwitch": [],
-			"gamesSwitch2": []
+			"gamesSwitch2": [
+				{
+					"gameName": "Resident Evil Requiem",
+					"gameID": [
+						"0400A58024718000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock cosmetic skins for your in-game weapons",
+							"write": false
+						}
+					]
+				}
+			]
 		},
 		"0x3541000005042002": {
 			"games3DS": [],
 			"gamesWiiU": [],
 			"gamesSwitch": [],
-			"gamesSwitch2": []
+			"gamesSwitch2": [
+				{
+					"gameName": "Resident Evil Requiem",
+					"gameID": [
+						"0400A58024718000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock cosmetic skins for your in-game weapons",
+							"write": false
+						}
+					]
+				}
+			]
 		},
 		"0x3580000005062102": {
 			"games3DS": [],
