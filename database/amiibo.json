@@ -223,7 +223,7 @@
 		},
 		"0x0807000004f70402":
 		{
-			"name": "Shiver (Splatoon Raiders)",
+			"name": "Shiver - Splatoon Raiders",
 			"release":
 			{
 				"au": "2026-07-23",
@@ -234,7 +234,7 @@
 		},
 		"0x0808000004f80402":
 		{
-			"name": "Frye (Splatoon Raiders)",
+			"name": "Frye - Splatoon Raiders",
 			"release":
 			{
 				"au": "2026-07-23",
@@ -245,7 +245,7 @@
 		},
 		"0x0809000004f90402":
 		{
-			"name": "Big Man (Splatoon Raiders)",
+			"name": "Big Man - Splatoon Raiders",
 			"release":
 			{
 				"au": "2026-07-23",
@@ -10424,6 +10424,25 @@
 				"jp": "2025-11-20",
 				"na": "2025-11-20"
 			}
+		}
+	},
+	"machine":
+	{
+		"0x1f00000004c41e03":
+		{
+			"name": "Warp Star"
+		},
+		"0x1f01000004c61e03":
+		{
+			"name": "Shadow Star"
+		},
+		"0x1f02000004c71e03":
+		{
+			"name": "Tank Star"
+		},
+		"0x1f03010004c91e03":
+		{
+			"name": "Winged Star"
 		}
 	},
 	"amiibo_series":

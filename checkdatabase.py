@@ -154,6 +154,21 @@ for key in database['amiibos']:
 	else:
 		printError(1, 'Formatting error on amiibo key: ' + key)
 
+# check machine keys
+if 'machine' in database:
+	for key in database['machine']:
+		if bool(amiibo_regex.match(key)):
+			machine = database['machine'][key]
+
+			if 'name' not in machine:
+				printError(1, 'Machine name not set for: ' + key)
+			else:
+				if machine['name'] == None:
+					printError(1, 'Machine name not set for: ' + key)
+
+		else:
+			printError(1, 'Formatting error on machine key: ' + key)
+
 # check amiibo_series keys
 for key in database['amiibo_series']:
 	if bool(amiibo_series_regex.match(key)) == False:
