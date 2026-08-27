@@ -8,9 +8,38 @@ var toastOptions = {
 };
 
 var url = "/static/assets/notification.json";
+var notificationStorageKey = "amiiboapi.notificationContent";
 var payload = $.getJSON(url)
   .done(function(data) {
-    var notifcations = data.notifications;
+    var notifcations = data.notifications || [];
+    var notificationContent = JSON.stringify(notifcations);
+    var previousNotificationContent;
+    var sameSiteReferrer = false;
+
+    if (document.referrer) {
+      var referrer = document.createElement("a");
+      referrer.href = document.referrer;
+      sameSiteReferrer = referrer.protocol === window.location.protocol &&
+        referrer.host === window.location.host;
+    }
+
+    try {
+      previousNotificationContent = window.sessionStorage.getItem(notificationStorageKey);
+    } catch (error) {
+      // Continue showing notifications when session storage is unavailable.
+      previousNotificationContent = null;
+    }
+
+    if (sameSiteReferrer && previousNotificationContent === notificationContent) {
+      return;
+    }
+
+    try {
+      window.sessionStorage.setItem(notificationStorageKey, notificationContent);
+    } catch (error) {
+      // The notification should still be shown if session storage is unavailable.
+    }
+
     var index = 1;
     notifcations.forEach(function(data) {
       // Stack notification...
