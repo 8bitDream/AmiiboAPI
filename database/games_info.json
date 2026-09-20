@@ -34303,12 +34303,6 @@
 				}
 			]
 		},
-		"0x010d000004a70902": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch": [],
-			"gamesSwitch2": []
-		},
 		"0x010a000004a40902": {
 			"games3DS": [
 				{
@@ -34611,6 +34605,94 @@
 					]
 				}
 			]
+		},
+		"0x010d000004a70902": {
+			"games3DS": [
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a Legend of Zelda pattern",
+							"write": false
+						}
+					]
+				}
+			],
+			"gamesWiiU": [],
+			"gamesSwitch": [
+				{
+					"gameName": "Animal Crossing: New Horizons",
+					"gameID": [
+						"01006F8002326000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite amiibo-exclusive villager Mineru / Unlock Legend of Zelda-themed items in shopping catalog",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Conga Master Party!",
+					"gameID": [
+						"01007EF00399C000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a special costume",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a Legend of Zelda-themed Mii racing suit",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "The Legend of Zelda: Link's Awakening",
+					"gameID": [
+						"01006BB00C6F0000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Save your Chamber Dungeon to the amiibo to share with friends",
+							"write": true
+						},
+						{
+							"Usage": "Unlock one of five amiibo-exclusive Chamber Dungeon chambers",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "The Legend of Zelda: Tears of the Kingdom",
+					"gameID": [
+						"0100F2C0115B6000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive materials and a weapon or rare item",
+							"write": false
+						},
+						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						}
+					]
+				}
+			],
+			"gamesSwitch2": []
 		},
 		"0x0140000003550902": {
 			"games3DS": [
