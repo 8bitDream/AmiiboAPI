@@ -4382,9 +4382,9 @@
 			"name": "Mario (Melody Car)",
 			"release":
 			{
-				"au": "na",
-				"na": "na",
-				"eu": "na",
+				"au": null,
+				"na": null,
+				"eu": null,
 				"jp": "2026-10-20"
 			}
 		},
@@ -10166,9 +10166,9 @@
 			"name": "Toad - My Mario Wooden Blocks",
 			"release":
 			{
-				"au": "na",
-				"na": "na",
-				"eu": "na",
+				"au": null,
+				"na": null,
+				"eu": null,
 				"jp": "2026-10-20"
 			}
 		},
