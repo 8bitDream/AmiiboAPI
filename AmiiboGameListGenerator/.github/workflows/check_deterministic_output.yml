@@ -1,0 +1,86 @@
+name: Check Deterministic Output
+
+on:
+  workflow_dispatch:
+    inputs:
+      count:
+        description: The number of times to compare the output
+        type: number
+        required: false
+        default: 2
+
+  pull_request:
+    branches: [ '*' ]
+
+jobs:
+  generate_runs_matrix:
+    name: Generate the runs matrix
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.get_matrix.outputs.matrix }}
+    
+    steps:
+      - name: Generate the matrix array
+        id: get_matrix
+        run: |
+          # Create a json array with the numbers from 1 to count
+          count=2
+
+          if [[ ! -z "${{ inputs.count }}" ]]; then
+            count=${{ inputs.count }}
+          fi
+
+          echo "matrix=$(seq 1 $count | jq -cRs 'split("\n")[:-1]')" >> $GITHUB_OUTPUT
+
+  games_info:
+    name: Get Game Info
+    needs: generate_runs_matrix
+    runs-on: ubuntu-latest
+    continue-on-error: false
+      
+    strategy:
+      max-parallel: 1
+      matrix:
+        run: ${{ fromJson(needs.generate_runs_matrix.outputs.matrix) }}
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Fetch the data
+      uses: ./.github/actions/build-and-run
+      with:
+        arguments: -log 0 -o ./games_info.json -allow-missing
+
+    - name: Upload result
+      uses: actions/upload-artifact@v4
+      with:
+        name: output-${{ matrix.run }}
+        path: ./games_info.json
+
+    - name: Get the previous run number
+      if: (matrix.run > 1)
+      id: previous_run
+      run: echo "previous_run=$((${{ matrix.run }} - 1))" >> $GITHUB_OUTPUT
+
+    - name: Download the artifact from the previous run
+      if: (matrix.run > 1)
+      uses: actions/download-artifact@v4
+      with:
+        name: output-${{ steps.previous_run.outputs.previous_run }}
+        path: previous-output/
+    
+    - name: Compare output with the previous run
+      id: compare
+      if: (matrix.run > 1)
+      run: |
+        # Compare the hash of games_info.json and previous-output/games_info.json
+        hash1=$(sha256sum ./games_info.json | cut -d ' ' -f 1)
+        hash2=$(sha256sum ./previous-output/games_info.json | cut -d ' ' -f 1)
+
+        echo "Hash of the current run: $hash1"
+        echo "Hash of the previous run: $hash2"
+
+        if [ "$hash1" != "$hash2" ]; then
+          echo "The output is not deterministic"
+          exit 1
+        fi

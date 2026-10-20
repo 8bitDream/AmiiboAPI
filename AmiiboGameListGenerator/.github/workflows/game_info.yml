@@ -1,0 +1,86 @@
+name: Get Game Info
+
+on:
+  workflow_call:
+    inputs:
+      parallelism:
+        description: Max degree of parallelism
+        type: number
+        required: false
+        default: 4
+
+      log:
+        description: Log level
+        type: number
+        required: false
+        default: 0
+
+      artifact:
+        description: The name of the resulting artifact
+        type: string
+        required: false
+        default: games_info
+
+      filename:
+        description: The name of the output file inside the artifact
+        type: string
+        required: false
+        default: games_info.json
+      
+      repo:
+        description: The repo containing the reusable workflow.
+        type: string
+        required: true
+      
+      repo-ref: 
+        description: The ref containing the reusable workflow.
+        type: string
+        required: true
+
+  workflow_dispatch:
+    inputs:
+      parallelism:
+        description: Max degree of parallelism
+        type: number
+        required: false
+        default: 4
+
+      log:
+        description: Log level
+        type: number
+        required: false
+        default: 0
+
+      artifact:
+        description: The name of the resulting artifact
+        type: string
+        required: false
+        default: games_info
+
+      filename:
+        description: The name of the output file inside the artifact
+        type: string
+        required: false
+        default: games_info.json
+
+jobs:
+  games_info:
+    name: Get Game Info
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        repository: ${{ inputs.repo }}
+        ref: ${{ inputs.repo-ref }}
+
+    - name: Build and run
+      uses: ./.github/actions/build-and-run
+      with:
+        arguments: -log "${{ inputs.log }}" -p "${{ inputs.parallelism }}" -o "./${{ inputs.filename}}" -allow-missing
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ inputs.artifact }}
+        path: ${{ inputs.filename}}
