@@ -518,7 +518,8 @@ public class Program
         {
             // Get the name of the game
             HtmlNode gameNameNode = node.SelectSingleNode(".//*[contains(concat(' ', normalize-space(@class), ' '), ' name ')]//text()[normalize-space()]");
-            HtmlNode platformNode = node.SelectSingleNode(".//*[contains(concat(' ', normalize-space(@class), ' '), ' name ')]/span");
+            // amiibo.life renders the platform in a sibling .system span, not inside .name.
+            HtmlNode platformNode = node.SelectSingleNode(".//*[contains(concat(' ', normalize-space(@class), ' '), ' system ')]");
             if (gameNameNode is null || platformNode is null)
             {
                 Debugger.Log("Skipping malformed game entry for " + DBamiibo.Name, Debugger.DebugLevel.Warn);
