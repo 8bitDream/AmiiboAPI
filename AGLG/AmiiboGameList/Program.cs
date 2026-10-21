@@ -1,4 +1,4 @@
-﻿using System.Net;
+using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Web;
@@ -42,7 +42,7 @@ public class Program
 
     static Program()
     {
-        client.DefaultRequestHeaders.UserAgent.ParseAdd("AmiiboGameListGenerator/1.4 (+https://github.com/MrKev312/AmiiboGameListGenerator)");
+        client.DefaultRequestHeaders.UserAgent.ParseAdd("AGLG/1.4 (+https://github.com/MrKev312/AmiiboGameListGenerator)");
         client.Timeout = TimeSpan.FromSeconds(60);
     }
 
@@ -82,6 +82,7 @@ public class Program
             $"Response status code does not indicate success: {(int)response.StatusCode} ({response.ReasonPhrase}).",
             null,
             response.StatusCode);
+        exception.Data["RequestUrl"] = url;
         exception.Data["RetryAfter"] = retryAfter;
         throw exception;
     }
@@ -421,6 +422,7 @@ public class Program
         // Counter to keep track of how many amiibo we've done
         int AmiiboCounter = 0;
         int TotalAmiibo = BRootobject.rootobject.amiibos.Count;
+        List<string> amiiboFailures = new();
 
         Debugger.Log("Processing amiibo");
         // Iterate over all amiibo and get game info
@@ -433,6 +435,19 @@ public class Program
             try
             {
                 exportAmiibo = ParseAmiibo(DBamiibo.Value);
+            }
+            catch (HttpRequestException ex) when (ex.StatusCode == HttpStatusCode.NotFound)
+            {
+                string failedUrl = ex.Data["RequestUrl"] as string ?? "(request URL unavailable)";
+                string failure = $"{DBamiibo.Value.OriginalName} ({DBamiibo.Value.Name}) — HTTP 404 — {failedUrl}";
+                Debugger.Log($"Failed to load game info for {failure}\n{ex.Message}", Debugger.DebugLevel.Error);
+                lock (amiiboFailures)
+                {
+                    amiiboFailures.Add(failure);
+                }
+
+                // Keep this amiibo in the output and continue processing the rest.
+                exportAmiibo = new Games();
             }
             catch (WebException ex)
             {
@@ -467,6 +482,15 @@ public class Program
         // Inform we're done
         Debugger.Log("\nDone generating the JSON!");
 
+        if (amiiboFailures.Count != 0)
+        {
+            Debugger.Log($"{amiiboFailures.Count} amiibo failed to load game info (HTTP 404):", Debugger.DebugLevel.Error);
+            foreach (string failure in amiiboFailures)
+            {
+                Debugger.Log("\t" + failure, Debugger.DebugLevel.Error);
+            }
+        }
+
         // Show missing games
         if (Games.missingGames.Count != 0)
         {
@@ -497,7 +521,7 @@ public class Program
 
         htmlDoc.LoadHtml(
             WebUtility.HtmlDecode(
-                Program.GetAmiilifeStringAsync(DBamiibo.URL).Result
+                Program.GetAmiilifeStringAsync(DBamiibo.URL).GetAwaiter().GetResult()
             )
         );
 

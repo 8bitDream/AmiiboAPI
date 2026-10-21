@@ -36,7 +36,7 @@ app.register_blueprint(amiiboApp)
 app.register_blueprint(amiibofullApp)
 
 CORS(app)
-app.json_encoder = AmiiboJSONEncoder
+app.json = AmiiboJSONEncoder(app)
 Compress(app)
 
 amiibo_manager = AmiiboManager.getInstance()

@@ -1,6 +1,6 @@
 import datetime
 
-from flask.json import JSONEncoder
+from flask.json.provider import DefaultJSONProvider
 
 from amiibo.amiibo import (Amiibo,
                            AmiiboReleaseDates,
@@ -11,7 +11,7 @@ from amiibo.amiibo import (Amiibo,
                            Hex)
 from amiibo.filterable import FilterableCollection
 
-class AmiiboJSONEncoder(JSONEncoder):
+class AmiiboJSONEncoder(DefaultJSONProvider):
     def default(self, obj):
         if isinstance(obj, Hex):
             return str(obj)
