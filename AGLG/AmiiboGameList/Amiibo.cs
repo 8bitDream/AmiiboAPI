@@ -112,7 +112,8 @@ public class DBAmiibo
                     // My Mario Wooden Blocks series
                     case var n when n.Contains("my mario wooden blocks"):
                         string characterName = Name.Replace(" - My Mario Wooden Blocks", "").Replace(" My Mario Wooden Blocks", "");
-                        return $"https://amiibo.life/amiibo/my-mario-wooden-blocks/{characterName.ToLower()}";
+                        string characterSlug = Regex.Replace(characterName.ToLowerInvariant(), @"[^a-z0-9]+", "-").Trim('-');
+                        return $"https://amiibo.life/amiibo/my-mario-wooden-blocks/{characterSlug}";
 
                     default:
                         string GameSeriesURL = amiiboSeries.ToLower();
