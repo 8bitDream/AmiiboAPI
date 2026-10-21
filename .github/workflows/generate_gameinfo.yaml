@@ -19,7 +19,7 @@ jobs:
       - name: Build and run generator
         run: >-
           dotnet run
-          --project AmiiboGameListGenerator/AmiiboGameList/AmiiboGameList.csproj
+          --project AGLG/AmiiboGameList/AmiiboGameList.csproj
           --configuration Release
           --no-launch-profile
           --
