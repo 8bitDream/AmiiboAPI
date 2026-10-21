@@ -1,0 +1,26 @@
+name: 'Build .NET Project'
+description: 'Setup .NET, restore dependencies, and build the project'
+outputs:
+  path: 
+    description: The build output path
+    value: AmiiboGameList/bin/Debug/net8.0/
+    
+runs:
+  using: 'composite'
+
+
+  steps:
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 8.x
+
+    - name: Restore dependencies
+      working-directory: AmiiboGameList
+      shell: bash
+      run: dotnet restore
+
+    - name: Build
+      working-directory: AmiiboGameList
+      shell: bash
+      run: dotnet build --no-restore

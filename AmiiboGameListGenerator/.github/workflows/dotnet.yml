@@ -1,0 +1,31 @@
+name: .NET
+
+on:
+  
+  workflow_dispatch:
+  push:
+    branches: [ '*' ]
+
+  pull_request:
+    branches: [ '*' ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./AmiiboGameList
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Build
+      uses: ./.github/actions/build
+      id: build
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: AmiiboGameList
+        path: ${{ steps.build.outputs.path }}

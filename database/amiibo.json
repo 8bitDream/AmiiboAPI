@@ -4372,9 +4372,20 @@
 			"release":
 			{
 				"au": null,
+				"na": null,
 				"eu": null,
-				"jp": "2025-08-26",
-				"na": null
+				"jp": "2025-08-26"
+			}
+		},
+		"0x0000000404431c02":
+		{
+			"name": "Mario - Melody Car",
+			"release":
+			{
+				"au": null,
+				"na": null,
+				"eu": null,
+				"jp": "2026-10-20"
 			}
 		},
 		"0x07c0020000230002":
@@ -10148,6 +10159,17 @@
 				"na": "2015-03-20",
 				"eu": "2015-03-20",
 				"jp": "2015-03-12"
+			}
+		},
+		"0x000a000404451c02":
+		{
+			"name": "Toad - My Mario Wooden Blocks",
+			"release":
+			{
+				"au": null,
+				"na": null,
+				"eu": null,
+				"jp": "2026-10-20"
 			}
 		},
 		"0x04000001006f0502":

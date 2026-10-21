@@ -1,0 +1,20 @@
+name: Build and Run .NET Project
+
+description: A composite action to setup .NET, restore dependencies, build, and run the project.
+
+inputs:
+  arguments:
+    description: The arguments to pass to the project.
+    required: false
+    default: -log 0
+
+runs:
+  using: "composite"
+  steps:
+    - name: Build
+      uses: ./.github/actions/build
+      id: build
+
+    - name: Run
+      shell: bash
+      run: dotnet "${{ steps.build.outputs.path }}/AmiiboGameList.dll" ${{ inputs.arguments }}

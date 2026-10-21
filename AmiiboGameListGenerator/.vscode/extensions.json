@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "ms-dotnettools.csdevkit",
+        "github.vscode-github-actions",
+        "SanjulaGanepola.github-local-actions"
+    ]
+}

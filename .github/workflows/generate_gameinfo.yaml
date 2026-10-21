@@ -7,10 +7,33 @@ on:
 
 jobs:
   get_info:
-    uses: 8bitDream/AmiiboGamelistGenerator/.github/workflows/game_info.yml@main
-    with:
-      repo: 8bitDream/AmiiboGamelistGenerator
-      repo-ref: main
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Build and run generator
+        run: >-
+          dotnet run
+          --project AmiiboGameListGenerator/AmiiboGameList/AmiiboGameList.csproj
+          --configuration Release
+          --no-launch-profile
+          --
+          -i ./database/amiibo.json
+          -log 0
+          -p 4
+          -o ./games_info.json
+          -allow-missing
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: games_info
+          path: games_info.json
 
   report:
     runs-on: ubuntu-latest

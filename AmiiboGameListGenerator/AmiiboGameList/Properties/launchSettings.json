@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "AmiiboGameList": {
+      "commandName": "Project",
+      "commandLineArgs": "-log 0"
+    }
+  }
+}
