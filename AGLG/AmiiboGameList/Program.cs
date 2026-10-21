@@ -1,3 +1,4 @@
+using System.Collections.Concurrent;
 using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -38,7 +39,7 @@ public class Program
     private static int amiilifeDelayMs = 1500;
     private static int amiilifeAttempts = 8;
     private static bool allowMissingGames;
-    private static readonly Dictionary<Hex, Games> export = new();
+    private static readonly ConcurrentDictionary<Hex, Games> export = new();
 
     static Program()
     {
@@ -460,14 +461,14 @@ public class Program
                 Environment.Exit((int)Debugger.ReturnType.UnknownError);
             }
 
-            lock (export)
+            if (!export.TryAdd(DBamiibo.Key, exportAmiibo))
             {
-                export.Add(DBamiibo.Key, exportAmiibo);
+                throw new InvalidOperationException($"Duplicate amiibo key: {DBamiibo.Key}");
             }
 
             // Show which amiibo just got added
-            AmiiboCounter++;
-            Debugger.Log($"{AmiiboCounter:D3}/{TotalAmiibo} Done with {DBamiibo.Value.OriginalName} ({DBamiibo.Value.amiiboSeries})", Debugger.DebugLevel.Verbose);
+            int completedAmiiboCount = Interlocked.Increment(ref AmiiboCounter);
+            Debugger.Log($"{completedAmiiboCount:D3}/{TotalAmiibo} Done with {DBamiibo.Value.OriginalName} ({DBamiibo.Value.amiiboSeries})", Debugger.DebugLevel.Verbose);
         });
 
         // Sort export object
