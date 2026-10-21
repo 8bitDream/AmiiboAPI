@@ -132,9 +132,11 @@ public class Program
                     throw;
                 }
             }
-            catch (HttpRequestException ex) when (ex.StatusCode.HasValue && ((int)ex.StatusCode > 499 && (int)ex.StatusCode < 600 || (int)ex.StatusCode == 429))
+            catch (HttpRequestException ex) when (!ex.StatusCode.HasValue || (int)ex.StatusCode >= 500 || ex.StatusCode == HttpStatusCode.TooManyRequests)
             {
-                if (await handleError(i, $"({i + 1}/{attempts}) HTTP {(int)ex.StatusCode} error while loading {url}\n{ex.Message}", ex))
+                ex.Data["RequestUrl"] ??= url;
+                string errorType = ex.StatusCode.HasValue ? $"HTTP {(int)ex.StatusCode} error" : "Request error";
+                if (await handleError(i, $"({i + 1}/{attempts}) {errorType} while loading {url}\n{ex.Message}", ex))
                 {
                     throw;
                 }
