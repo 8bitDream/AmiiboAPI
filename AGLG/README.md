@@ -1,4 +1,4 @@
-# AmiiboGameListGenerator
+# AGLG
 This project is created to supply the [AmiiboAPI](https://github.com/N3evin/AmiiboAPI "AmiiboAPI") with a games_info.json file. This file is used to store which Amiibo can be used in which game and in what way.
 
 ## Usage

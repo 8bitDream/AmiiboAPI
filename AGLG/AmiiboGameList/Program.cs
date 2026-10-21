@@ -42,7 +42,7 @@ public class Program
 
     static Program()
     {
-        client.DefaultRequestHeaders.UserAgent.ParseAdd("AmiiboGameListGenerator/1.4 (+https://github.com/MrKev312/AmiiboGameListGenerator)");
+        client.DefaultRequestHeaders.UserAgent.ParseAdd("AGLG/1.4 (+https://github.com/MrKev312/AmiiboGameListGenerator)");
         client.Timeout = TimeSpan.FromSeconds(60);
     }
 
