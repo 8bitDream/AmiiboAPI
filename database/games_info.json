@@ -133079,7 +133079,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Play as Shadow Mewtwo before unlocking it in-game",
+							"Usage": "Play as Shadow Mewtwo before unlocking him in-game, until you quit",
 							"write": false
 						}
 					]
@@ -133097,7 +133097,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Access all cutscenes up until the current chapter",
+							"Usage": "Unlock all Pika Prompts from the chapters you've cleared",
 							"write": false
 						}
 					]
@@ -133486,7 +133486,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive better rewards",
+							"Usage": "Unlock a License Card theme of the character, plus Miles",
+							"write": false
+						},
+						{
+							"Usage": "Unlock an alternate color for the character's rider early, or the rider themself",
 							"write": false
 						}
 					]
@@ -133852,7 +133856,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive better rewards",
+							"Usage": "Unlock a License Card theme of the character, plus Miles",
+							"write": false
+						},
+						{
+							"Usage": "Unlock an alternate color for the character's rider early, or the rider themself",
 							"write": false
 						}
 					]
@@ -133968,8 +133976,24 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Race and train up a computer-controlled Figure Player of the character / Change main menu cursor doll to match amiibo",
+							"Usage": "Race and train up a computer-controlled Figure Player of the rider and machine",
 							"write": true
+						},
+						{
+							"Usage": "Unlock the rider and machine as a main menu figure, plus first-scan License Card rewards",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby Air Riders",
+					"gameID": [
+						"040077201BE50000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an alternate color for the character's rider early, or the rider themself",
+							"write": false
 						}
 					]
 				},
@@ -134256,7 +134280,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive better rewards",
+							"Usage": "Unlock a License Card theme of the character, plus Miles",
+							"write": false
+						},
+						{
+							"Usage": "Unlock an alternate color for the character's rider early, or the rider themself",
 							"write": false
 						}
 					]
@@ -134544,7 +134572,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive better rewards",
+							"Usage": "Unlock a License Card theme of the character, plus Miles",
+							"write": false
+						},
+						{
+							"Usage": "Unlock an alternate color for the character's rider early, or the rider themself",
 							"write": false
 						}
 					]
@@ -134648,8 +134680,24 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Race and train up a computer-controlled Figure Player of the character / Change main menu cursor doll to match amiibo",
+							"Usage": "Race and train up a computer-controlled Figure Player of the rider and machine",
 							"write": true
+						},
+						{
+							"Usage": "Unlock the rider and machine as a main menu figure, plus first-scan License Card rewards",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby Air Riders",
+					"gameID": [
+						"040077201BE50000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an alternate color for the character's rider early, or the rider themself",
+							"write": false
 						}
 					]
 				},
@@ -134950,7 +134998,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive better rewards",
+							"Usage": "Unlock a License Card theme of the character, plus Miles",
+							"write": false
+						},
+						{
+							"Usage": "Unlock an alternate color for the character's rider early, or the rider themself",
 							"write": false
 						}
 					]
@@ -135252,7 +135304,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive better rewards",
+							"Usage": "Unlock a License Card theme of the character, plus Miles",
+							"write": false
+						},
+						{
+							"Usage": "Unlock an alternate color for the character's rider early, or the rider themself",
 							"write": false
 						}
 					]
@@ -135356,8 +135412,24 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Race and train up a computer-controlled Figure Player of the character / Change main menu cursor doll to match amiibo",
+							"Usage": "Race and train up a computer-controlled Figure Player of the rider and machine",
 							"write": true
+						},
+						{
+							"Usage": "Unlock the rider and machine as a main menu figure, plus first-scan License Card rewards",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby Air Riders",
+					"gameID": [
+						"040077201BE50000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an alternate color for the character's rider early, or the rider themself",
+							"write": false
 						}
 					]
 				},
@@ -135566,7 +135638,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive better rewards",
+							"Usage": "Unlock a License Card theme of the character, plus Miles",
+							"write": false
+						},
+						{
+							"Usage": "Unlock an alternate color for the character's rider early, or the rider themself",
 							"write": false
 						}
 					]
@@ -135646,8 +135722,24 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Race and train up a computer-controlled Figure Player of the character / Change main menu cursor doll to match amiibo",
+							"Usage": "Race and train up a computer-controlled Figure Player of the rider and machine",
 							"write": true
+						},
+						{
+							"Usage": "Unlock the rider and machine as a main menu figure, plus first-scan License Card rewards",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby Air Riders",
+					"gameID": [
+						"040077201BE50000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an alternate color for the character's rider early, or the rider themself",
+							"write": false
 						}
 					]
 				},
@@ -135677,8 +135769,24 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Race and train up a computer-controlled Figure Player of the character / Change main menu cursor doll to match amiibo",
+							"Usage": "Race and train up a computer-controlled Figure Player of the rider and machine",
 							"write": true
+						},
+						{
+							"Usage": "Unlock the rider and machine as a main menu figure, plus first-scan License Card rewards",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby Air Riders",
+					"gameID": [
+						"040077201BE50000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an alternate color for the character's rider early, or the rider themself",
+							"write": false
 						}
 					]
 				}
@@ -135981,6 +136089,10 @@
 						{
 							"Usage": "Receive a Fashion Ticket and a Music Ticket, for unlocking any of the available costumes and music tracks",
 							"write": false
+						},
+						{
+							"Usage": "Receive a Relay Trial ticket, once a day",
+							"write": false
 						}
 					]
 				},
@@ -136015,7 +136127,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a special piece of battle music / Receive higher-quality items and materials",
+							"Usage": "Unlock a battle music track from the character's game / Open the Holy Tomb in New Game+, with the Sothis Shield command",
 							"write": false
 						}
 					]
@@ -136200,6 +136312,10 @@
 						{
 							"Usage": "Receive a Fashion Ticket and a Music Ticket, for unlocking any of the available costumes and music tracks",
 							"write": false
+						},
+						{
+							"Usage": "Receive a Relay Trial ticket, once a day",
+							"write": false
 						}
 					]
 				},
@@ -136234,7 +136350,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a special piece of battle music / Receive higher-quality items and materials",
+							"Usage": "Unlock a battle music track from the character's game / Open the Holy Tomb in New Game+, with the Sothis Shield command",
 							"write": false
 						}
 					]
@@ -136431,6 +136547,10 @@
 						{
 							"Usage": "Receive a Fashion Ticket and a Music Ticket, for unlocking any of the available costumes and music tracks",
 							"write": false
+						},
+						{
+							"Usage": "Receive a Relay Trial ticket, once a day",
+							"write": false
 						}
 					]
 				},
@@ -136465,7 +136585,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a special piece of battle music / Receive higher-quality items and materials",
+							"Usage": "Unlock a battle music track from the character's game / Open the Holy Tomb in New Game+, with the Sothis Shield command",
 							"write": false
 						}
 					]
@@ -136650,6 +136770,10 @@
 						{
 							"Usage": "Receive a Fashion Ticket and a Music Ticket, for unlocking any of the available costumes and music tracks",
 							"write": false
+						},
+						{
+							"Usage": "Receive a Relay Trial ticket, once a day",
+							"write": false
 						}
 					]
 				},
@@ -136684,7 +136808,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a special piece of battle music / Receive higher-quality items and materials",
+							"Usage": "Unlock a battle music track from the character's game / Open the Holy Tomb in New Game+, with the Sothis Shield command",
 							"write": false
 						}
 					]
@@ -136801,6 +136925,10 @@
 						{
 							"Usage": "Receive a Fashion Ticket and a Music Ticket, for unlocking any of the available costumes and music tracks",
 							"write": false
+						},
+						{
+							"Usage": "Receive a Relay Trial ticket, once a day",
+							"write": false
 						}
 					]
 				},
@@ -136835,7 +136963,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a special piece of battle music / Receive higher-quality items and materials",
+							"Usage": "Unlock a battle music track from the character's game / Open the Holy Tomb in New Game+, with the Sothis Shield command",
 							"write": false
 						}
 					]
@@ -136938,6 +137066,10 @@
 						{
 							"Usage": "Receive a Fashion Ticket and a Music Ticket, for unlocking any of the available costumes and music tracks",
 							"write": false
+						},
+						{
+							"Usage": "Receive a Relay Trial ticket, once a day",
+							"write": false
 						}
 					]
 				},
@@ -136972,7 +137104,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a special piece of battle music / Receive higher-quality items and materials",
+							"Usage": "Unlock a battle music track from the character's game / Open the Holy Tomb in New Game+, with the Sothis Shield command",
 							"write": false
 						}
 					]
@@ -137075,6 +137207,10 @@
 						{
 							"Usage": "Receive a Fashion Ticket and a Music Ticket, for unlocking any of the available costumes and music tracks",
 							"write": false
+						},
+						{
+							"Usage": "Receive a Relay Trial ticket, once a day",
+							"write": false
 						}
 					]
 				},
@@ -137109,7 +137245,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a special piece of battle music / Receive higher-quality items and materials",
+							"Usage": "Unlock a battle music track from the character's game / Open the Holy Tomb in New Game+, with the Sothis Shield command",
 							"write": false
 						}
 					]
@@ -137139,12 +137275,16 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Summon an upgradeable illusory hero to help during battle",
-							"write": true
+							"Usage": "Play a character-exclusive dungeon (Duma's Ordeals or Mila's Ordeals)",
+							"write": false
 						},
 						{
-							"Usage": "Unlock a character-exclusive dungeon",
+							"Usage": "Receive amiibo-exclusive equipment by clearing the dungeon for the first time",
 							"write": false
+						},
+						{
+							"Usage": "Summon an upgradeable illusory hero to help during battle",
+							"write": true
 						}
 					]
 				},
@@ -137172,6 +137312,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Receive a Fashion Ticket and a Music Ticket, for unlocking any of the available costumes and music tracks",
+							"write": false
+						},
+						{
+							"Usage": "Receive a Relay Trial ticket, once a day",
 							"write": false
 						}
 					]
@@ -137207,7 +137351,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a special piece of battle music / Receive higher-quality items and materials",
+							"Usage": "Unlock a battle music track from the character's game / Open the Holy Tomb in New Game+, with the Sothis Shield command",
 							"write": false
 						}
 					]
@@ -137237,12 +137381,16 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Summon an upgradeable illusory hero to help during battle",
-							"write": true
+							"Usage": "Play a character-exclusive dungeon (Duma's Ordeals or Mila's Ordeals)",
+							"write": false
 						},
 						{
-							"Usage": "Unlock a character-exclusive dungeon",
+							"Usage": "Receive amiibo-exclusive equipment by clearing the dungeon for the first time",
 							"write": false
+						},
+						{
+							"Usage": "Summon an upgradeable illusory hero to help during battle",
+							"write": true
 						}
 					]
 				},
@@ -137270,6 +137418,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Receive a Fashion Ticket and a Music Ticket, for unlocking any of the available costumes and music tracks",
+							"write": false
+						},
+						{
+							"Usage": "Receive a Relay Trial ticket, once a day",
 							"write": false
 						}
 					]
@@ -137305,7 +137457,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a special piece of battle music / Receive higher-quality items and materials",
+							"Usage": "Unlock a battle music track from the character's game / Open the Holy Tomb in New Game+, with the Sothis Shield command",
 							"write": false
 						}
 					]
@@ -137356,6 +137508,10 @@
 						{
 							"Usage": "Receive a Fashion Ticket and a Music Ticket, for unlocking any of the available costumes and music tracks",
 							"write": false
+						},
+						{
+							"Usage": "Receive a Relay Trial ticket, once a day",
+							"write": false
 						}
 					]
 				},
@@ -137394,7 +137550,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a special piece of battle music / Receive higher-quality items and materials",
+							"Usage": "Unlock a battle music track from the character's game / Open the Holy Tomb in New Game+, with the Sothis Shield command",
 							"write": false
 						}
 					]
@@ -137445,6 +137601,10 @@
 						{
 							"Usage": "Receive a Fashion Ticket and a Music Ticket, for unlocking any of the available costumes and music tracks",
 							"write": false
+						},
+						{
+							"Usage": "Receive a Relay Trial ticket, once a day",
+							"write": false
 						}
 					]
 				},
@@ -137483,7 +137643,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a special piece of battle music / Receive higher-quality items and materials",
+							"Usage": "Unlock a battle music track from the character's game / Open the Holy Tomb in New Game+, with the Sothis Shield command",
 							"write": false
 						}
 					]
@@ -137534,6 +137694,10 @@
 						{
 							"Usage": "Receive a Fashion Ticket and a Music Ticket, for unlocking any of the available costumes and music tracks",
 							"write": false
+						},
+						{
+							"Usage": "Receive a Relay Trial ticket, once a day",
+							"write": false
 						}
 					]
 				},
@@ -137572,7 +137736,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a special piece of battle music / Receive higher-quality items and materials",
+							"Usage": "Unlock a battle music track from the character's game / Open the Holy Tomb in New Game+, with the Sothis Shield command",
 							"write": false
 						}
 					]
@@ -137604,6 +137768,10 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Receive a Fashion Ticket and a Music Ticket, for unlocking any of the available costumes and music tracks",
+							"write": false
+						},
+						{
+							"Usage": "Receive a Relay Trial ticket, once a day",
 							"write": false
 						}
 					]
@@ -141014,7 +141182,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock the Hakum Rider Outfit layered armor set / Have Tsukino read your fortune and receive a random item",
+							"Usage": "Unlock the Hakum Rider Outfit layered armor set",
 							"write": false
 						}
 					]
@@ -141111,7 +141279,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock the Hakum Rider Outfit layered armor set / Have Tsukino read your fortune and receive a random item",
+							"Usage": "Unlock the Hakum Rider Outfit layered armor set",
 							"write": false
 						}
 					]
@@ -141208,7 +141376,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock the Hakum Rider Outfit layered armor set / Have Tsukino read your fortune and receive a random item",
+							"Usage": "Unlock the Hakum Rider Outfit layered armor set",
 							"write": false
 						}
 					]
@@ -141305,7 +141473,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock the Hakum Rider Outfit layered armor set / Have Tsukino read your fortune and receive a random item",
+							"Usage": "Unlock the Hakum Rider Outfit layered armor set",
 							"write": false
 						}
 					]
@@ -141402,7 +141570,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock the Hakum Rider Outfit layered armor set / Have Tsukino read your fortune and receive a random item",
+							"Usage": "Unlock the Hakum Rider Outfit layered armor set",
 							"write": false
 						}
 					]
@@ -141499,7 +141667,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock the Hakum Rider Outfit layered armor set / Have Tsukino read your fortune and receive a random item",
+							"Usage": "Unlock the Hakum Rider Outfit layered armor set",
 							"write": false
 						}
 					]
@@ -141566,7 +141734,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-specific special layered armor set / Have Tsukino read your fortune and receive a random item",
+							"Usage": "Unlock a character-specific layered armor set",
 							"write": false
 						}
 					]
@@ -141609,7 +141777,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-specific special layered armor set / Have Tsukino read your fortune and receive a random item",
+							"Usage": "Unlock a character-specific layered armor set",
 							"write": false
 						}
 					]
@@ -141652,7 +141820,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-specific special layered armor set / Have Tsukino read your fortune and receive a random item",
+							"Usage": "Unlock a character-specific layered armor set",
 							"write": false
 						}
 					]
@@ -141683,7 +141851,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock the Hunter Sticker Set / Have Tsukino read your fortune and receive a random item",
+							"Usage": "Unlock the Hunter Sticker Set",
 							"write": false
 						}
 					]
@@ -141714,7 +141882,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock the Hunter Sticker Set / Have Tsukino read your fortune and receive a random item",
+							"Usage": "Unlock the Hunter Sticker Set",
 							"write": false
 						}
 					]
@@ -141745,7 +141913,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock the Hunter Sticker Set / Have Tsukino read your fortune and receive a random item",
+							"Usage": "Unlock the Hunter Sticker Set",
 							"write": false
 						}
 					]
@@ -141776,7 +141944,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock the Hunter Sticker Set / Have Tsukino read your fortune and receive a random item",
+							"Usage": "Unlock the Hunter Sticker Set",
 							"write": false
 						}
 					]
@@ -141807,7 +141975,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock the Hunter Sticker Set / Have Tsukino read your fortune and receive a random item",
+							"Usage": "Unlock the Hunter Sticker Set",
 							"write": false
 						}
 					]
@@ -141996,7 +142164,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock boss fight against Shovel Knight",
+							"Usage": "Fight Shovel Knight as a bonus boss",
+							"write": false
+						},
+						{
+							"Usage": "Unlock the Shovel Ring (Gunvolt) or Code of Shovelry (Copen) by beating Shovel Knight",
 							"write": false
 						}
 					]
@@ -142050,7 +142222,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock boss fight against Shovel Knight",
+							"Usage": "Fight Shovel Knight as a bonus boss",
+							"write": false
+						},
+						{
+							"Usage": "Unlock the Shovel Ring (Gunvolt) or Code of Shovelry (Copen) by beating Shovel Knight",
 							"write": false
 						}
 					]
@@ -142155,7 +142331,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock boss fight against Shovel Knight",
+							"Usage": "Fight Shovel Knight as a bonus boss",
+							"write": false
+						},
+						{
+							"Usage": "Unlock the Shovel Ring (Gunvolt) or Code of Shovelry (Copen) by beating Shovel Knight",
 							"write": false
 						}
 					]
@@ -142209,7 +142389,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock boss fight against Shovel Knight",
+							"Usage": "Fight Shovel Knight as a bonus boss",
+							"write": false
+						},
+						{
+							"Usage": "Unlock the Shovel Ring (Gunvolt) or Code of Shovelry (Copen) by beating Shovel Knight",
 							"write": false
 						}
 					]
