@@ -88,6 +88,29 @@ public class Program
         throw exception;
     }
 
+    private static async Task<string> GetSwitchbrewPageAsync()
+    {
+        const int attempts = 3;
+        for (int attempt = 1; ; attempt++)
+        {
+            try
+            {
+                return await client.GetStringAsync(Switch2TitleListUrl);
+            }
+            catch (TaskCanceledException ex) when (attempt < attempts)
+            {
+                Debugger.Log($"Switchbrew request timed out ({attempt}/{attempts}): {ex.Message}", Debugger.DebugLevel.Warn);
+            }
+            catch (HttpRequestException ex) when (attempt < attempts
+                && (!ex.StatusCode.HasValue || (int)ex.StatusCode >= 500 || ex.StatusCode == HttpStatusCode.TooManyRequests))
+            {
+                Debugger.Log($"Switchbrew request failed ({attempt}/{attempts}): {ex.Message}", Debugger.DebugLevel.Warn);
+            }
+
+            await Task.Delay(TimeSpan.FromSeconds(5 * attempt));
+        }
+    }
+
     public static async Task<string> GetAmiilifeStringAsync(string url, int? attempts = null)
     {
         attempts ??= amiilifeAttempts;
@@ -391,21 +414,26 @@ public class Program
         }
 
         // Load Switch 2 games from Switchbrew and merge with NS2, favoring NS2 records
+        List<Switch2Game> validNs2Games = ns2Games
+            .Where(game => IsValidTitleId(game.titleid))
+            .Select(game => new Switch2Game
+            {
+                titleid = game.titleid[..16],
+                name = game.name
+            })
+            .ToList();
         try
         {
             Debugger.Log("Downloading Switch 2 database", Debugger.DebugLevel.Verbose);
-            string switchbrewPage = Program.client.GetStringAsync(Switch2TitleListUrl).Result;
+            string switchbrewPage = GetSwitchbrewPageAsync().GetAwaiter().GetResult();
 
             Debugger.Log("Processing Switch 2 database", Debugger.DebugLevel.Verbose);
             List<Switch2Game> switchbrewGames = ParseSwitchbrewGames(switchbrewPage);
-            List<Switch2Game> validNs2Games = ns2Games
-                .Where(game => IsValidTitleId(game.titleid))
-                .Select(game => new Switch2Game
-                {
-                    titleid = game.titleid[..16],
-                    name = game.name
-                })
-                .ToList();
+            if (switchbrewGames.Count == 0)
+            {
+                throw new InvalidDataException("No Switch 2 games were found in the Switchbrew page.");
+            }
+
             Games.Switch2Games = validNs2Games
                 .Concat(switchbrewGames
                     .Where(game => !ns2TitleIds.Contains(game.titleid)))
@@ -413,8 +441,16 @@ public class Program
         }
         catch (Exception ex)
         {
-            Debugger.Log("Error loading Switch 2 games:\n" + ex.Message, Debugger.DebugLevel.Error);
-            Environment.Exit((int)Debugger.ReturnType.DatabaseLoadingError);
+            if (validNs2Games.Count > 0)
+            {
+                Games.Switch2Games = validNs2Games;
+                Debugger.Log($"Switchbrew unavailable; using {validNs2Games.Count} games from the NS2 database instead:\n{ex.Message}", Debugger.DebugLevel.Warn);
+            }
+            else
+            {
+                Debugger.Log("Error loading Switch 2 games (Switchbrew failed and the NS2 database has no usable entries):\n" + ex.Message, Debugger.DebugLevel.Error);
+                Environment.Exit((int)Debugger.ReturnType.DatabaseLoadingError);
+            }
         }
 
         Debugger.Log("Done loading!");
