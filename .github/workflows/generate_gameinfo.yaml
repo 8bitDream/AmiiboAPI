@@ -29,6 +29,32 @@ jobs:
           -o ./games_info.json
           -allow-missing
 
+      - name: Validate generated game info
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+
+          with open("games_info.json", encoding="utf-8") as file:
+              data = json.load(file)
+
+          amiibos = data.get("amiibos")
+          if not isinstance(amiibos, dict) or not amiibos:
+              raise SystemExit("Generated game info has no amiibo records.")
+
+          platforms = ("games3DS", "gamesWiiU", "gamesSwitch", "gamesSwitch2")
+          populated = sum(
+              any(record.get(platform) for platform in platforms)
+              for record in amiibos.values()
+          )
+          minimum_populated = max(1, len(amiibos) // 2)
+          if populated < minimum_populated:
+              raise SystemExit(
+                  f"Generated game info only contains data for {populated}/{len(amiibos)} "
+                  f"amiibo; refusing to publish fewer than {minimum_populated}."
+              )
+          PY
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:

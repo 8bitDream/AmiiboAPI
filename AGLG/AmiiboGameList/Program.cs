@@ -509,6 +509,19 @@ public class Program
             Debugger.Log($"{completedAmiiboCount:D3}/{TotalAmiibo} Done with {DBamiibo.Value.OriginalName} ({DBamiibo.Value.amiiboSeries})", Debugger.DebugLevel.Verbose);
         });
 
+        int amiibosWithGames = export.Values.Count(amiibo =>
+            amiibo.games3DS.Count + amiibo.gamesWiiU.Count +
+            amiibo.gamesSwitch.Count + amiibo.gamesSwitch2.Count > 0);
+        int minimumAmiibosWithGames = Math.Max(1, TotalAmiibo / 2);
+        if (amiibosWithGames < minimumAmiibosWithGames)
+        {
+            Debugger.Log(
+                $"Only found game info for {amiibosWithGames}/{TotalAmiibo} amiibo; " +
+                $"refusing to write an incomplete game database (minimum {minimumAmiibosWithGames}).",
+                Debugger.DebugLevel.Error);
+            return (int)Debugger.ReturnType.DatabaseLoadingError;
+        }
+
         // Sort export object
         var SortedAmiibos = new AmiiboKeyValue
         {
@@ -564,12 +577,12 @@ public class Program
             )
         );
 
-        // Get the games panel. SelectNodes returns null when the page has no matches.
-        // This is valid for amiibo with no game entries (and can also happen when
-        // amiibo.life changes the page markup), so treat it as an empty collection.
+        // amiibo.life wraps each game in a .game-card div. Keep the direct-link
+        // selector as a fallback for the older page layout.
         HtmlNodeCollection GamesPanel = htmlDoc.DocumentNode.SelectNodes(
             "//*[contains(concat(' ', normalize-space(@class), ' '), ' games ') and " +
-            "contains(concat(' ', normalize-space(@class), ' '), ' panel ')]/a");
+            "contains(concat(' ', normalize-space(@class), ' '), ' panel ')]/*[self::a or " +
+            "contains(concat(' ', normalize-space(@class), ' '), ' game-card ')]");
         if (GamesPanel is null || GamesPanel.Count == 0)
         {
             Debugger.Log("No games found for " + DBamiibo.Name, Debugger.DebugLevel.Verbose);
