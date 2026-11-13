@@ -1,6 +1,6 @@
 {
-	"database/amiibo.json": "8f3fae3b8fa4d0df53a253ebbec98ea56712c60b",
-	"database/games_info.json": "6d1ca0ebf4978e6b1a75c7a2cee2424c1444ba9b",
+	"database/amiibo.json": "f9950a6b0840e724039414a7c1dd126b1a69265a",
+	"database/games_info.json": "4d1d74ba9dd83ee7b801f5d6a613488010772b17",
 	"images/icon_00000000-00000002.png": "40a6d03082565c3a905a9659a87b891d00e39b33",
 	"images/icon_00000000-00340102.png": "cdbcfb5e0f71a899e33d54cac148d10c737c098f",
 	"images/icon_00000000-003c0102.png": "7e40420e17b79907f42d4e13eff1d97bb79e755b",
@@ -794,12 +794,14 @@
 	"images/icon_1f000000-000a0002.png": "42ddd39071ac4b1a86da2cfbd118bd01a6808b9b",
 	"images/icon_1f000000-02540c02.png": "a2e124fe93dbe078075762c2e2e0337eabec60ec",
 	"images/icon_1f000000-04c41e03.png": "6f63434b0dcf1a2f4e69bfdeb23151446860a185",
+	"images/icon_1f000100-04c51e03.png": "419f30f38e524a1e11baa3f267a1734f713c5e2f",
 	"images/icon_1f010000-00270002.png": "88d57e17ddb588236f3ea0d38abedc9cd80b3c25",
 	"images/icon_1f010000-02550c02.png": "73bc8ca6e8a3d020f1ca3b8d9cf13937c20d04a0",
 	"images/icon_1f010000-04c61e03.png": "4d117788da105bd67f61dc518856425a3bb99e46",
 	"images/icon_1f020000-00280002.png": "6bf956ca20702bce079724caa5dae2fca9add1e7",
 	"images/icon_1f020000-02560c02.png": "b83a7ab0eca6674ed56120939c3dd9cd5eb01335",
 	"images/icon_1f020000-04c71e03.png": "d9f14e9a0d136547953f0d49611c5d5dc9947d69",
+	"images/icon_1f020100-04c81e03.png": "2cc1d9b6c30f59cc4ccead92bf771fd40bdf98f0",
 	"images/icon_1f030000-02570c02.png": "226a5e122fd43e1894dfddd412c7147c8f767193",
 	"images/icon_1f030100-04c91e03.png": "7cfb861c4f390ae3cbb4cfb7f0faedf561adc225",
 	"images/icon_1f040000-04ca1e03.png": "4d24db8746ea948fb0019bad0004ca4c15a17314",
@@ -953,5 +955,5 @@
 	"images/icon_3dc00000-04220002.png": "69a906517e5dd8f57999969f29ee53e25fed1eb0",
 	"images/icon_3dc10000-04230002.png": "4f32d621651413fc25f1d6d48ace713fba183ec6",
 	"images/icon_3f000000-042e0002.png": "723160b6c15367effd0929d49e64345d6dc2728e",
-	"last-updated.json": "2ee36cd1d6b1c6b6c1644398baed8f6e6f1dd758"
+	"last-updated.json": "839c48303a06fa2526b08dc157319e986c9d1d3c"
 }
