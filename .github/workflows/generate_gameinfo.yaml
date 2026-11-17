@@ -43,15 +43,35 @@ jobs:
               raise SystemExit("Generated game info has no amiibo records.")
 
           platforms = ("games3DS", "gamesWiiU", "gamesSwitch", "gamesSwitch2")
-          populated = sum(
-              any(record.get(platform) for platform in platforms)
-              for record in amiibos.values()
-          )
+          populated = 0
+          usage_count = 0
+          missing_descriptions = 0
+          for record in amiibos.values():
+              has_games = False
+              for platform in platforms:
+                  games = record.get(platform, [])
+                  if games:
+                      has_games = True
+                  for game in games:
+                      for usage in game.get("amiiboUsage", []):
+                          usage_count += 1
+                          description = usage.get("Usage")
+                          if not isinstance(description, str) or not description.strip():
+                              missing_descriptions += 1
+              if has_games:
+                  populated += 1
+
           minimum_populated = max(1, len(amiibos) // 2)
           if populated < minimum_populated:
               raise SystemExit(
                   f"Generated game info only contains data for {populated}/{len(amiibos)} "
                   f"amiibo; refusing to publish fewer than {minimum_populated}."
+              )
+
+          if not usage_count or missing_descriptions:
+              raise SystemExit(
+                  f"Generated game info has {missing_descriptions}/{usage_count} "
+                  "usage descriptions missing; refusing to publish incomplete data."
               )
           PY
 

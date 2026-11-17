@@ -509,15 +509,37 @@ public class Program
             Debugger.Log($"{completedAmiiboCount:D3}/{TotalAmiibo} Done with {DBamiibo.Value.OriginalName} ({DBamiibo.Value.amiiboSeries})", Debugger.DebugLevel.Verbose);
         });
 
-        int amiibosWithGames = export.Values.Count(amiibo =>
-            amiibo.games3DS.Count + amiibo.gamesWiiU.Count +
-            amiibo.gamesSwitch.Count + amiibo.gamesSwitch2.Count > 0);
+        int amiibosWithGames = 0;
+        int missingUsageDescriptions = 0;
+        foreach (Games amiibo in export.Values)
+        {
+            if (amiibo.games3DS.Count + amiibo.gamesWiiU.Count +
+                amiibo.gamesSwitch.Count + amiibo.gamesSwitch2.Count > 0)
+            {
+                amiibosWithGames++;
+            }
+
+            missingUsageDescriptions += CountMissingUsageDescriptions(amiibo.games3DS);
+            missingUsageDescriptions += CountMissingUsageDescriptions(amiibo.gamesWiiU);
+            missingUsageDescriptions += CountMissingUsageDescriptions(amiibo.gamesSwitch);
+            missingUsageDescriptions += CountMissingUsageDescriptions(amiibo.gamesSwitch2);
+        }
+
         int minimumAmiibosWithGames = Math.Max(1, TotalAmiibo / 2);
         if (amiibosWithGames < minimumAmiibosWithGames)
         {
             Debugger.Log(
                 $"Only found game info for {amiibosWithGames}/{TotalAmiibo} amiibo; " +
                 $"refusing to write an incomplete game database (minimum {minimumAmiibosWithGames}).",
+                Debugger.DebugLevel.Error);
+            return (int)Debugger.ReturnType.DatabaseLoadingError;
+        }
+
+        if (missingUsageDescriptions > 0)
+        {
+            Debugger.Log(
+                $"Found {missingUsageDescriptions} game usage entries without descriptions; " +
+                "refusing to write incomplete game info.",
                 Debugger.DebugLevel.Error);
             return (int)Debugger.ReturnType.DatabaseLoadingError;
         }
@@ -563,6 +585,23 @@ public class Program
         {
             return 0;
         }
+    }
+
+    private static int CountMissingUsageDescriptions(List<Game> games)
+    {
+        int missing = 0;
+        foreach (Game game in games)
+        {
+            foreach (AmiiboUsage usage in game.amiiboUsage)
+            {
+                if (string.IsNullOrWhiteSpace(usage?.Usage))
+                {
+                    missing++;
+                }
+            }
+        }
+
+        return missing;
     }
 
     private static Games ParseAmiibo(DBAmiibo DBamiibo)
@@ -612,10 +651,20 @@ public class Program
             // Get the amiibo usages
             foreach (HtmlNode amiiboUsage in node.SelectNodes(".//*[contains(concat(' ', normalize-space(@class), ' '), ' features ')]/li") ?? Enumerable.Empty<HtmlNode>())
             {
+                // New amiibo.life pages store text in nested feature-link-name spans
+                // and encode Read+Write as a type chip instead of an <em> element.
+                HtmlNode usageName = amiiboUsage.SelectSingleNode(
+                    ".//*[contains(concat(' ', normalize-space(@class), ' '), ' feature-link-name ')]");
+                HtmlNode readWriteChip = amiiboUsage.SelectSingleNode(
+                    ".//*[contains(concat(' ', normalize-space(@class), ' '), ' type-read-write ')]");
+
                 game.amiiboUsage.Add(new()
                 {
-                    Usage = Regex.Replace(amiiboUsage.GetDirectInnerText().Trim(), @"\s+", " "),
-                    write = amiiboUsage.SelectSingleNode("em")?.InnerText == "(Read+Write)"
+                    Usage = Regex.Replace(
+                        (usageName?.InnerText ?? amiiboUsage.GetDirectInnerText()).Trim(),
+                        @"\s+", " "),
+                    write = readWriteChip is not null
+                        || amiiboUsage.SelectSingleNode("em")?.InnerText == "(Read+Write)"
                 });
             }
 
