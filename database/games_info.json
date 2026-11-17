@@ -1144,7 +1144,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
+							"Usage": "Change to character-themed decoration in Bellabel Park hub",
 							"write": false
 						}
 					]
@@ -1503,8 +1503,8 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Customize game board in amiibo Party",
-							"write": false
+							"Usage": "Use as game piece in amiibo Party",
+							"write": true
 						}
 					]
 				},
@@ -1695,7 +1695,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Gain temporary invincibility",
+							"Usage": "Receive a character-based costume",
 							"write": false
 						}
 					]
@@ -1769,7 +1769,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
+							"Usage": "Change to character-themed decoration in Bellabel Park hub",
 							"write": false
 						}
 					]
@@ -2128,8 +2128,8 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Customize game board in amiibo Party",
-							"write": false
+							"Usage": "Use as game piece in amiibo Party",
+							"write": true
 						}
 					]
 				},
@@ -2320,7 +2320,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Gain temporary invincibility",
+							"Usage": "Receive a character-based costume",
 							"write": false
 						}
 					]
@@ -2394,7 +2394,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
+							"Usage": "Change to character-themed decoration in Bellabel Park hub",
 							"write": false
 						}
 					]
@@ -2784,7 +2784,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-based Mystery Mushroom costume",
+							"Usage": "Add a Big Mushroom power-up to your course (only available via amiibo)",
 							"write": false
 						}
 					]
@@ -3366,7 +3366,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-based Mystery Mushroom costume",
+							"Usage": "Add a Big Mushroom power-up to your course (only available via amiibo)",
 							"write": false
 						}
 					]
@@ -4109,7 +4109,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Gain temporary invincibility",
+							"Usage": "Receive a character-based costume",
 							"write": false
 						}
 					]
@@ -4145,8 +4145,8 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
-							"write": true
+							"Usage": "Receive a Spirit of the character",
+							"write": false
 						}
 					]
 				},
@@ -4195,7 +4195,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
+							"Usage": "Change to character-themed decoration in Bellabel Park hub",
 							"write": false
 						}
 					]
@@ -5227,7 +5227,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Play as or receive bonus from this character, depending on the mode",
+							"Usage": "Unlock \"Chill\" track in Rhythm Recital mode",
 							"write": false
 						}
 					]
@@ -6203,7 +6203,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
+							"Usage": "Change to character-themed decoration in Bellabel Park hub",
 							"write": false
 						}
 					]
@@ -7323,7 +7323,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
+							"Usage": "Change to character-themed decoration in Bellabel Park hub",
 							"write": false
 						}
 					]
@@ -10105,7 +10105,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
+							"Usage": "Change to character-themed decoration in Bellabel Park hub",
 							"write": false
 						}
 					]
@@ -10612,7 +10612,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a life-up heart",
+							"Usage": "Receive a character-based costume",
 							"write": false
 						}
 					]
@@ -10648,8 +10648,8 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
-							"write": true
+							"Usage": "Receive a Spirit of the character",
+							"write": false
 						}
 					]
 				},
@@ -10698,7 +10698,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
+							"Usage": "Change to character-themed decoration in Bellabel Park hub",
 							"write": false
 						}
 					]
@@ -11926,7 +11926,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
+							"Usage": "Change to character-themed decoration in Bellabel Park hub",
 							"write": false
 						}
 					]
@@ -12866,7 +12866,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
+							"Usage": "Change to character-themed decoration in Bellabel Park hub",
 							"write": false
 						}
 					]
@@ -14158,8 +14158,8 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Save your favorite yarn pattern to your amiibo",
-							"write": true
+							"Usage": "Activate Double Yoshi mode",
+							"write": false
 						}
 					]
 				},
@@ -14275,8 +14275,8 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Save your favorite yarn pattern to your amiibo",
-							"write": true
+							"Usage": "Activate Double Yoshi mode",
+							"write": false
 						}
 					]
 				},
@@ -14640,8 +14640,8 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Save your favorite yarn pattern to your amiibo",
-							"write": true
+							"Usage": "Activate Double Yoshi mode",
+							"write": false
 						}
 					]
 				},
@@ -14757,8 +14757,8 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Save your favorite yarn pattern to your amiibo",
-							"write": true
+							"Usage": "Activate Double Yoshi mode",
+							"write": false
 						}
 					]
 				},
@@ -15817,7 +15817,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
+							"Usage": "Change to character-themed decoration in Bellabel Park hub",
 							"write": false
 						}
 					]
@@ -16615,7 +16615,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
+							"Usage": "Change to character-themed decoration in Bellabel Park hub",
 							"write": false
 						}
 					]
@@ -17626,7 +17626,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
+							"Usage": "Change to character-themed decoration in Bellabel Park hub",
 							"write": false
 						}
 					]
@@ -18105,7 +18105,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Reveal regional coin locations",
+							"Usage": "Receive a character-based costume",
 							"write": false
 						}
 					]
@@ -18141,8 +18141,8 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
-							"write": true
+							"Usage": "Receive a Spirit of the character",
+							"write": false
 						}
 					]
 				},
@@ -18191,7 +18191,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
+							"Usage": "Change to character-themed decoration in Bellabel Park hub",
 							"write": false
 						}
 					]
@@ -19660,7 +19660,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
+							"Usage": "Change to character-themed decoration in Bellabel Park hub",
 							"write": false
 						}
 					]
@@ -20483,7 +20483,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
+							"Usage": "Change to character-themed decoration in Bellabel Park hub",
 							"write": false
 						}
 					]
@@ -20973,7 +20973,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Spawn explosive golden KONG tiles",
+							"Usage": "Unlock Pauline's Diva Dress early",
 							"write": false
 						}
 					]
@@ -21964,7 +21964,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
+							"Usage": "Change to character-themed decoration in Bellabel Park hub",
 							"write": false
 						}
 					]
@@ -22538,7 +22538,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
+							"Usage": "Change to character-themed decoration in Bellabel Park hub",
 							"write": false
 						}
 					]
@@ -23328,7 +23328,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
+							"Usage": "Change to character-themed decoration in Bellabel Park hub",
 							"write": false
 						}
 					]
@@ -23878,7 +23878,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
+							"Usage": "Change to character-themed decoration in Bellabel Park hub",
 							"write": false
 						}
 					]
@@ -24081,7 +24081,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
+							"Usage": "Change to character-themed decoration in Bellabel Park hub",
 							"write": false
 						}
 					]
@@ -24333,7 +24333,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
+							"Usage": "Change to character-themed decoration in Bellabel Park hub",
 							"write": false
 						}
 					]
@@ -24533,7 +24533,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a particular power-up depending on the amiibo",
+							"Usage": "Change to character-themed decoration in Bellabel Park hub",
 							"write": false
 						}
 					]
@@ -25311,7 +25311,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -25831,7 +25831,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -26347,7 +26347,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -26879,7 +26879,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -27399,7 +27399,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -27915,7 +27915,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -28431,7 +28431,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -28947,7 +28947,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -29451,7 +29451,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -29885,8 +29885,8 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Save your Chamber Dungeon to the amiibo to share with friends",
-							"write": true
+							"Usage": "Unlock the Shadow Link Plus Effect for Chamber Dungeons",
+							"write": false
 						}
 					]
 				},
@@ -29979,7 +29979,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -30495,7 +30495,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -30681,7 +30681,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock the amiibo-exclusive Spinner weapon",
+							"Usage": "Receive a weapon rated 3 stars or higher",
 							"write": false
 						}
 					]
@@ -30997,7 +30997,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -31183,7 +31183,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock the amiibo-exclusive Spinner weapon",
+							"Usage": "Receive a weapon rated 3 stars or higher",
 							"write": false
 						}
 					]
@@ -31511,7 +31511,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -31973,7 +31973,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -32447,7 +32447,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -32921,7 +32921,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -33395,7 +33395,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -33857,7 +33857,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -34305,7 +34305,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -34740,7 +34740,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -35187,7 +35187,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -35550,7 +35550,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -35806,7 +35806,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -36062,7 +36062,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -36318,7 +36318,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -36574,7 +36574,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -36731,7 +36731,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -36888,7 +36888,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -37045,7 +37045,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -37202,7 +37202,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -37347,7 +37347,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -37618,7 +37618,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -37889,7 +37889,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive items to help on your adventure",
 							"write": false
 						}
 					]
@@ -62466,7 +62466,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Place the character's house on the game board",
+							"Usage": "Use the character in mini-games",
 							"write": false
 						}
 					]
@@ -62634,7 +62634,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Place the character's house on the game board",
+							"Usage": "Use the character in mini-games",
 							"write": false
 						}
 					]
@@ -66619,7 +66619,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Place the character's house on the game board",
+							"Usage": "Use the character in mini-games",
 							"write": false
 						}
 					]
@@ -66787,7 +66787,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Place the character's house on the game board",
+							"Usage": "Use the character in mini-games",
 							"write": false
 						}
 					]
@@ -73017,7 +73017,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Place the character's house on the game board",
+							"Usage": "Use the character in mini-games",
 							"write": false
 						}
 					]
@@ -73185,7 +73185,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Place the character's house on the game board",
+							"Usage": "Use the character in mini-games",
 							"write": false
 						}
 					]
@@ -116782,8 +116782,8 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
-							"write": true
+							"Usage": "Receive a Spirit of the character",
+							"write": false
 						}
 					]
 				},
@@ -117442,8 +117442,8 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
-							"write": true
+							"Usage": "Receive a Spirit of the character",
+							"write": false
 						}
 					]
 				},
@@ -123656,16 +123656,16 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Revisit the Grand Festival Grounds to see past Splatfest performances",
-							"write": false
+							"Usage": "Save favorite weapons, gear, and control settings",
+							"write": true
 						},
 						{
-							"Usage": "",
-							"write": false
+							"Usage": "Take photos with the character or saved gear",
+							"write": true
 						},
 						{
-							"Usage": "",
-							"write": false
+							"Usage": "Unlock exclusive gear",
+							"write": true
 						}
 					]
 				},
@@ -124149,16 +124149,16 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Revisit the Grand Festival Grounds to see past Splatfest performances",
-							"write": false
+							"Usage": "Save favorite weapons, gear, and control settings",
+							"write": true
 						},
 						{
-							"Usage": "",
-							"write": false
+							"Usage": "Take photos with the character or saved gear",
+							"write": true
 						},
 						{
-							"Usage": "",
-							"write": false
+							"Usage": "Unlock exclusive gear",
+							"write": true
 						}
 					]
 				},
@@ -124443,16 +124443,16 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Revisit the Grand Festival Grounds to see past Splatfest performances",
-							"write": false
+							"Usage": "Save favorite weapons, gear, and control settings",
+							"write": true
 						},
 						{
-							"Usage": "",
-							"write": false
+							"Usage": "Take photos with the character or saved gear",
+							"write": true
 						},
 						{
-							"Usage": "",
-							"write": false
+							"Usage": "Unlock exclusive gear",
+							"write": true
 						}
 					]
 				},
@@ -124737,16 +124737,16 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Revisit the Grand Festival Grounds to see past Splatfest performances",
-							"write": false
+							"Usage": "Save favorite weapons, gear, and control settings",
+							"write": true
 						},
 						{
-							"Usage": "",
-							"write": false
+							"Usage": "Take photos with the character or saved gear",
+							"write": true
 						},
 						{
-							"Usage": "",
-							"write": false
+							"Usage": "Unlock exclusive gear",
+							"write": true
 						}
 					]
 				},
@@ -134386,11 +134386,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock an alternate color for the character's rider early, or the rider themself",
-							"write": false
+							"Usage": "Race and train up a computer-controlled Figure Player of the rider and machine",
+							"write": true
 						},
 						{
-							"Usage": "",
+							"Usage": "Unlock the rider and machine as a main menu figure, plus first-scan License Card rewards",
 							"write": false
 						}
 					]
@@ -134432,7 +134432,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive star coins and a boost item",
 							"write": false
 						}
 					]
@@ -134444,7 +134444,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive two Picture Pieces, a Maxim Tomato, and two Point Stars",
 							"write": false
 						}
 					]
@@ -134456,7 +134456,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive more useful items",
 							"write": false
 						}
 					]
@@ -134468,7 +134468,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Unlock a Kirby-themed racing suit",
 							"write": false
 						}
 					]
@@ -134480,7 +134480,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Unlock a character-based costume",
 							"write": false
 						}
 					]
@@ -134492,7 +134492,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive 10-20 Fragments",
 							"write": false
 						}
 					]
@@ -134504,8 +134504,8 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
-							"write": false
+							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
+							"write": true
 						}
 					]
 				}
@@ -134518,11 +134518,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
-							"write": false
+							"Usage": "Race and train up a computer-controlled Figure Player of the rider and machine",
+							"write": true
 						},
 						{
-							"Usage": "",
+							"Usage": "Unlock the rider and machine as a main menu figure, plus first-scan License Card rewards",
 							"write": false
 						}
 					]
@@ -134534,7 +134534,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Unlock an alternate color for the character's rider early, or the rider themself",
 							"write": false
 						}
 					]
@@ -134546,7 +134546,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive star coins and a boost item",
 							"write": false
 						}
 					]
@@ -135222,11 +135222,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock an alternate color for the character's rider early, or the rider themself",
-							"write": false
+							"Usage": "Race and train up a computer-controlled Figure Player of the rider and machine",
+							"write": true
 						},
 						{
-							"Usage": "",
+							"Usage": "Unlock the rider and machine as a main menu figure, plus first-scan License Card rewards",
 							"write": false
 						}
 					]
@@ -135954,11 +135954,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock an alternate color for the character's rider early, or the rider themself",
-							"write": false
+							"Usage": "Race and train up a computer-controlled Figure Player of the rider and machine",
+							"write": true
 						},
 						{
-							"Usage": "",
+							"Usage": "Unlock the rider and machine as a main menu figure, plus first-scan License Card rewards",
 							"write": false
 						}
 					]
@@ -136000,7 +136000,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive star coins and a boost item",
 							"write": false
 						}
 					]
@@ -136012,7 +136012,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive two Picture Pieces, a Maxim Tomato, and two Point Stars",
 							"write": false
 						}
 					]
@@ -136024,7 +136024,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive more useful items",
 							"write": false
 						}
 					]
@@ -136036,7 +136036,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Unlock a Kirby-themed racing suit",
 							"write": false
 						}
 					]
@@ -136048,7 +136048,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive 10-20 Fragments",
 							"write": false
 						}
 					]
@@ -136060,8 +136060,8 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
-							"write": false
+							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
+							"write": true
 						}
 					]
 				}
@@ -136074,11 +136074,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
-							"write": false
+							"Usage": "Race and train up a computer-controlled Figure Player of the rider and machine",
+							"write": true
 						},
 						{
-							"Usage": "",
+							"Usage": "Unlock the rider and machine as a main menu figure, plus first-scan License Card rewards",
 							"write": false
 						}
 					]
@@ -136090,7 +136090,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Unlock an alternate color for the character's rider early, or the rider themself",
 							"write": false
 						}
 					]
@@ -136102,7 +136102,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive star coins and a boost item",
 							"write": false
 						}
 					]
@@ -136384,11 +136384,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock an alternate color for the character's rider early, or the rider themself",
-							"write": false
+							"Usage": "Race and train up a computer-controlled Figure Player of the rider and machine",
+							"write": true
 						},
 						{
-							"Usage": "",
+							"Usage": "Unlock the rider and machine as a main menu figure, plus first-scan License Card rewards",
 							"write": false
 						}
 					]
@@ -136431,11 +136431,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock an alternate color for the character's rider early, or the rider themself",
-							"write": false
+							"Usage": "Race and train up a computer-controlled Figure Player of the rider and machine",
+							"write": true
 						},
 						{
-							"Usage": "",
+							"Usage": "Unlock the rider and machine as a main menu figure, plus first-scan License Card rewards",
 							"write": false
 						}
 					]
@@ -140431,11 +140431,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive EXP for Episodes of South Town (EOST)",
 							"write": false
 						},
 						{
-							"Usage": "",
+							"Usage": "Unlock amiibo-exclusive avatars and titles",
 							"write": false
 						}
 					]
@@ -140483,11 +140483,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive EXP for Episodes of South Town (EOST)",
 							"write": false
 						},
 						{
-							"Usage": "",
+							"Usage": "Unlock amiibo-exclusive avatars and titles",
 							"write": false
 						}
 					]
@@ -140535,11 +140535,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive EXP for Episodes of South Town (EOST)",
 							"write": false
 						},
 						{
-							"Usage": "",
+							"Usage": "Unlock amiibo-exclusive avatars and titles",
 							"write": false
 						}
 					]
@@ -140781,11 +140781,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive EXP for Episodes of South Town (EOST)",
 							"write": false
 						},
 						{
-							"Usage": "",
+							"Usage": "Unlock amiibo-exclusive avatars and titles",
 							"write": false
 						}
 					]
@@ -140820,11 +140820,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive EXP for Episodes of South Town (EOST)",
 							"write": false
 						},
 						{
-							"Usage": "",
+							"Usage": "Unlock amiibo-exclusive avatars and titles",
 							"write": false
 						}
 					]
@@ -144151,11 +144151,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive EXP for Episodes of South Town (EOST)",
 							"write": false
 						},
 						{
-							"Usage": "",
+							"Usage": "Unlock amiibo-exclusive avatars and titles",
 							"write": false
 						}
 					]
@@ -144203,11 +144203,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive EXP for Episodes of South Town (EOST)",
 							"write": false
 						},
 						{
-							"Usage": "",
+							"Usage": "Unlock amiibo-exclusive avatars and titles",
 							"write": false
 						}
 					]
@@ -144255,11 +144255,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive EXP for Episodes of South Town (EOST)",
 							"write": false
 						},
 						{
-							"Usage": "",
+							"Usage": "Unlock amiibo-exclusive avatars and titles",
 							"write": false
 						}
 					]
@@ -144294,11 +144294,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive EXP for Episodes of South Town (EOST)",
 							"write": false
 						},
 						{
-							"Usage": "",
+							"Usage": "Unlock amiibo-exclusive avatars and titles",
 							"write": false
 						}
 					]
@@ -144333,11 +144333,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "",
+							"Usage": "Receive EXP for Episodes of South Town (EOST)",
 							"write": false
 						},
 						{
-							"Usage": "",
+							"Usage": "Unlock amiibo-exclusive avatars and titles",
 							"write": false
 						}
 					]
